@@ -1,0 +1,243 @@
+
+
+<section>
+  <title>Linear Functions</title>
+  <example>
+    <statement>
+      <p>
+        For the two points <m>(1,2)</m> and <m>(-5,4)</m> what is the slope of the line connecting them?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There are probably three useful ways to think about the slope
+        <md>
+          <mrow>m \amp  = \frac{\text{ rise } }{\text{ run } }</mrow>
+          <mrow>\amp  = \frac{y_2-y_1}{x_2-x_1}</mrow>
+          <mrow>\amp  = \frac{\Delta y}{\Delta x}</mrow>
+        </md>
+      </p>
+
+      <p>
+        Note that all three of these formulas say the same thing:
+        <q>rise</q> really means <m>y_2-y_1</m>,
+        i.e.<nbsp />how much did <m>y</m> change.
+        Similarly, <q><m>\Delta y</m></q>
+        is just shorthand notation for
+        <q>change of <m>y</m></q>.
+      </p>
+
+      <p>
+        The main things you have to watch out for in this kind of problem are: (1) make sure you put the <m>y</m>'s on top, (2) make sure you use the numbers in the same order on the top and bottom.
+        Here's a picture of how the numbers should move into the correct places:
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[
+        every node/.style={inner sep=2pt},
+        lasso/.style={shape=ellipse, draw}
+        ]
+        \path (-1.25,3.25) node[left]{
+        \(\begin{array}{rl}
+        \multicolumn{2}{r}{\text{ Given Points } }\\
+        (-5, \amp  4)\\
+        (1, \amp   2)
+        \end{array} \)};
+
+        \path (0,1) node (x1) {\llap{\(-\)}\(5\)};
+        \path (1,1) node (y1) {\(4\)};
+        \path (0,0) node (x2) {\(1\)};
+        \path (1,0) node (y2) {\(2\)};
+
+        \path (x1) node[left=0.75cm] {1st in subtraction};
+        \path (x2) node[left=0.75cm] {2nd in subtraction};
+        \path (x1) ++ (0,1.25) node[right,rotate=90] {top of fraction};
+        \path (y1) ++ (0,1.25) node[right,rotate=90] {bottom of fraction};
+
+        \begin{scope}[xshift=7cm]
+        \path (0,1) node (n1) {\(4\)};
+        \path (1,1) node (n2) {\(2\)};
+        \path (0,0) node (d1) {\llap{\(-\)}\(5\)};
+        \path (1,0) node (d2) {\(1\)};
+        \path (0.5,1) node {\(-\)};
+        \path (0.5,0) node {\(-\)};
+        \draw (-0.5,0.5) -- (1.5,0.5);
+        \end{scope}
+
+        \begin{scope}[color=red!75!black,very thick]
+        \node[fit=(x1)(x2), lasso] (Ltop) ;
+        \node[fit=(y1)(y2), lasso] (Lbot) ;
+        \node[fit=(n1)(n2), lasso] (Rtop) ;
+        \node[fit=(d1)(d2), lasso] (Rbot) ;
+        \draw[->,out=35,in=180,shorten >=5pt] (Ltop.north) to (Rtop.west);
+        \draw[->,out=25,in=180,shorten >=5pt] (Lbot.north) to (Rbot.west);
+        \end{scope}
+
+        \begin{scope}[color=green!65!black,very thick]
+        \node[fit=(x1)(y1), lasso] (L1st) ;
+        \node[fit=(x2)(y2), lasso] (L2nd) ;
+        \node[fit=(n1)(d1), lasso] (R1st) ;
+        \node[fit=(n2)(d2), lasso] (R2nd) ;
+        \draw[->,out=-25,in=240,shorten >=5pt] (L1st.east) to (R1st.south);
+        \draw[->,out=-35,in=270,shorten >=5pt] (L2nd.east) to (R2nd.south);
+        \end{scope}\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        Now we finish our calculation:
+        <md>
+          <mrow>m \amp  = \frac{4 - 2}{-5 - 1}</mrow>
+          <mrow>\amp  = \frac{\ 2\ }{-6}</mrow>
+          <mrow>\amp  = - \frac 13</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find an equation of the line that passes through <m>(1,2)</m> and <m>(-5,4)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We'll start with the point-slope form of the equation of a line:
+        <me>
+          y  = m(x-x_0) + y_0\\
+        </me>
+      </p>
+
+      <p>
+        From Example 1, we know the slope already, <m>m = -\frac{1}{3}</m>.
+        Then
+        we can use either <m>(1,2)</m> or <m>(-5,4)</m> for the known point.
+        We'll
+        use <m>(1,2)</m>.
+        <me>
+          y = -\frac{1}{3}(x-1) +2
+        </me>
+      </p>
+
+      <p>
+        There's nothing wrong with leaving the equation like this,
+        but most of
+        us are more used to the slope-intercept form, so we can distribute the
+        numbers and simplify:
+        <md>
+          <mrow>y \amp  = -\frac{1}{3}x + \frac{1}{3} + 2</mrow>
+          <mrow>y  \amp  = -\frac{1}{3}x + \frac{1}{3} + \frac{6}{3}</mrow>
+          <mrow>y  \amp  = -\frac{1}{3}x + \frac{7}{3}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        A cab company has an initial charge of
+        <m>\dollar4.00</m> plus <m>\dollar2.20</m> per mile.
+        Find a formula for the cab fare, <m>C</m>,
+        in dollars, as a function of the number of miles, <m>m</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There are three things to identify here:
+        where do we put the <m>4.00</m>,
+        where do we put the <m>2.20</m>,
+        and which variables should we use?
+      </p>
+
+      <p>
+        The <m>4.00</m> is the initial charge.
+        The word <q>initial</q>
+        means at the very beginning, in this case,
+        before we start driving at all.
+        This means it's the value when we've gone <m>0</m> miles,
+        which is another way to say it's the <m>y</m>-intercept,
+        or the vertical intercept.
+      </p>
+
+      <p>
+        The <m>2.20</m> is a charge <em><nbsp />per<nbsp /></em>mile.
+        The word <q>per</q> is a clue that this is the slope:
+        slope is a ratio, and <q>per</q> always means ratio too.
+      </p>
+
+      <p>
+        Putting these together we should have
+        <me>
+          \text{ something like } y = 2.20\times \text{ something like } x + 4.00
+        </me>
+      </p>
+
+      <p>
+        The correct somethings are <m>C</m> instead of <m>y</m> and <m>m</m> instead of <m>x</m>.
+        I know it looks weird, but <q><m>m</m></q>
+        is our variable here, not slope
+        (since <m>m</m> looks so weird,
+        that's why I wrote it out with words first,
+        to make sure I got things in the right place).
+        <me>
+          C = 2.20m + 4
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        ACME company has seen a decline in sales of their product.
+        In 2010
+        they sold 28.4 million, while in 2016 they sold 22.7 million.
+
+        <ol>
+          <li>
+            <p>
+              Find a formula for annual sales <m>S</m>, in millions of items,
+              as a linear function of the years <m>t</m>, since 2010.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Predict the sales in 2019.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              We have two points of the line:
+              <m>(0, 28.4)</m>, and <m>(6, 22.7)</m>, which gives us
+              <me>
+                m = \frac{22.7-28.4}{6-0} = \frac{-5.7}{6} = -0.95
+              </me>
+              Luckily,
+        we were given the <m>y</m>-intercept of <m>28.4</m> so we have
+              <me>
+                S(t) = -0.95t + 28.4
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Use <m>t = 9</m> to get
+              <me>
+                S(9) = -0.95(9) + 28.4 = 19.85
+              </me>
+              Thus we predict sales of <m>19.85</m> million in the year 2019.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

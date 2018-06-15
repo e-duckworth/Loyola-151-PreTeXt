@@ -1,0 +1,122 @@
+
+
+<section>
+  <title>The Derivative as a Function</title>
+  <example>
+    <title>Problems 18<ndash />21</title>
+    <statement>
+      <p>
+        Match the functions in Problems 18<ndash />21 with one of the derivatives in Figure 2.25. \setkeys{Gin}{width=2in}
+      </p>
+      <tabular>
+        {c@{\hspace{1cm}}c}
+        <hash />18
+        <image width="73%" source="images/" />
+        &amp; <hash />19
+        <image width="73%" source="images/" />
+        \\
+        <hash />20
+        <image width="73%" source="images/" />
+        &amp; <hash />21
+        <image width="73%" source="images/" />
+      </tabular>
+
+      <table>
+        { Figure 2.25}
+
+        \setkeys{Gin}{width=2in}
+        \figurerenewcommand{\arraystretch}{10}
+        <tabular>
+          {c@{\hspace{1cm}}c}
+          <image width="73%" source="images/" />
+          &amp;
+          <image width="73%" source="images/" />
+          \\
+          <image width="73%" source="images/" />
+          &amp;
+          <image width="73%" source="images/" />
+          \\
+          <image width="73%" source="images/" />
+          &amp;
+          <image width="73%" source="images/" />
+          \\
+          <image width="73%" source="images/" />
+          &amp;
+          <image width="73%" source="images/" />
+        </tabular>
+      </table>
+
+      <p>
+        \afterpage{}
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Although we have to do all four functions,
+        we don't have to do them in order.
+        So, we'll start with the simplest one: <hash />19.
+      </p>
+
+      <p>
+        The function in <hash />19 is straight line,
+        and it always has the same slope.
+        We may not be able to tell exactly what this slope is:
+        maybe <m>m=-2</m>, or <m>m=-3</m> or something like that.
+        When we look at the graphs in Figure 2.25 we should not look at their slopes:
+        we should look at their <m>y</m>-values.
+        Which graph always has a constant <m>y</m>-value,
+        of <m>y=-2</m> or <m>y=-3</m>?
+        Graph IV. So, <hash />19 goes with graph IV.
+      </p>
+
+      <p>
+        Now let's look at <hash />20.
+        Around <m>x=0</m> this has a positive slope:
+        maybe <m>m=1</m> or <m>m=2</m>.
+        Around <m>x=2</m> this graph is horizontal, so <m>m=0</m>.
+        Around <m>x=4</m> his has a negative slope:
+        maybe <m>m=-1</m> or <m>m=-2</m>.
+        When we look at the graphs in Figure 2.25 we should not look at their slopes:
+        we should look at their <m>y</m>-values.
+        Look at <m>x=0</m>, and <m>x=2</m> and <m>x=4</m>,
+        which graph has <m>y=-1</m> or <m>y=-2</m>,
+        then <m>y=0</m>, then <m>y=1</m> or <m>y=2</m>?
+        Graph II. So, <hash />20 goes with graph II.
+      </p>
+
+      <p>
+        Now let,s look at <hash />18.
+        This one is more complicated, but
+        paradoxically, this means we don't need to be as precise.
+        There are
+        two spots where the slope is <m>0</m>:
+        at <m>x=-1</m> and <m>x=1</m>.
+        To the far
+        left the slope is negative;
+        between <m>x=-1</m> and <m>x=1</m> the slope is
+        positive, and to the far right the slope is negative again.
+        When we
+        look at the graphs in Figure 2.25 we should not look at their slopes:
+        we should look at their <m>y</m>-values.
+        Reading from left to right, we
+        should look for <m>y</m>-values that are negative,
+        <m>0</m>, positive, <m>0</m>,
+        negative, or, to use shorthand:
+        <me>
+          -, 0, +, 0, -
+        </me>
+      </p>
+
+      <p>
+        Which graph has <m>y</m>-values that follow this pattern?
+        Graph VIII.
+      </p>
+
+      <p>
+        Finally, let's look at <hash />21.
+        See if you can figure out why this function goes with graph VI.
+      </p>
+    </solution>
+  </example>
+</section>
+

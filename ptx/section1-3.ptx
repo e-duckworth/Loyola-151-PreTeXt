@@ -1,0 +1,163 @@
+
+
+<section>
+  <title>Exponents</title>
+  <example>
+    <statement>
+      <p>
+        Recall:
+        <md>
+          <mrow>a^{-b}  \amp  \text{ means } {\frac{1}{\ a^b\ }} \amp  (a^n)^m \amp  = {a^{nm}}   \amp  \frac{a^n}{a^m} \amp  = {a^{n-m}}</mrow>
+          <mrow>a^{1/b} \amp  \text{ means } {\sqrt[b]{a}}       \amp  a^n a^m \amp  = {a^{n+m}}   \amp  (ab)^n          \amp  ={a^n b^n}</mrow>
+        </md>
+      </p>
+
+      <p>
+        Using the above properties, simplify the following.
+
+        <ol>
+          \itemsep=\fill
+
+          <li>
+            <p>
+              <m>(-2)^5</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{x^{17}}{x^{22}}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>4^{-3/2}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\sqrt{36x^4}</m> \handoutfill
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>(-2)^5 = (-2)(-2)(-2)(-2)(-2) = {-32}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{x^{17}}{x^{22}} = {x^{17-22}=x^{-5}=\frac{1}{x^5}}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>4^{-3/2} = {\frac{1}{4^{3/2}} = \frac{1}{(\sqrt{4})^3}=\frac{1}{2^3}=\frac{1}{8}}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\sqrt{36x^4} = \sqrt{36}\sqrt{x^4} = {6x^2}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <ol>
+        \itemsep=\fill
+
+        <li>
+          <p>
+            Simplify the following
+            <me>
+              \frac  {-2x^{-4}y^6} 
+              {3x^3y^{-3}}
+            </me>
+            so that your final is written using only exponents, no fractions, and
+            each base, <m>2</m>, <m>3</m>,
+            <m>x</m> and <m>y</m>, appears only once.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Challenge Problem: 
+            Simplify the following
+            <me>
+              \left(\frac
+              {(-2x^{-4}y^6)^{-8}} 
+              {(3x^3y^{-3})^{-2}}
+              \right)^{-2}_{}
+            </me>
+            so that your final answer has no fractions,
+            and each base, <m>2</m>, <m>3</m>,
+            <m>x</m> and <m>y</m>, appears only once. 
+            \handoutfill
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>\frac  {-2x^{-4}y^6}   {3x^3y^{-3}}  
+                \amp  = -2x^{-4}y^6\cdot 3\inv x^{-3}y^{3}</mrow>
+                <mrow>\amp  = -2 \cdot 3\inv x^{-7}y^9</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There's more than one order you can do this in,
+        and it really
+              doesn't matter too much which way you go.
+              But I think it does help
+              to get some sort of a strategy and try to follow that.
+              For
+              instance,
+        you could say <q>I'll work from the inside out, and
+              simplify as I go.</q>  Or you could say,
+              <q>I'll work from the outside
+              in, and simplify at the end.</q>  But what you probably
+              <em>shouldn't</em>
+              say is <q>I'll randomly combine the inside and the
+              outside,
+        and move everything around until I think of something to do
+              with it.</q>
+
+              I'll work from the inside out and simplify as I go:
+              <md>
+                <mrow>\left(\frac  {(-2x^{-4}y^6)^{-8}} 
+                {(3x^3y^{-3})^{-2}} \right)^{-2}
+                \amp  =\left(\frac  {(-2)^{-8} x^{32} y^{-48}} 
+                {(3)^{-2} x^{-6} y^{6}} \right)^{-2}</mrow>
+                <mrow>\amp  = \left(2^{-8} 3^{-(-2)} x^{32-(-6)} y^{-48-6}\right)^{-2}</mrow>
+                <mrow>\amp  =\left(2^{-8} 3^{2} x^{38} y^{-54}\right)^{-2}</mrow>
+                <mrow>\amp  = 2^{16} 3^{-4} x^{-76} y^{108}</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

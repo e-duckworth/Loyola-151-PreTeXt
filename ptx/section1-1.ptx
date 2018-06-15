@@ -1,0 +1,496 @@
+
+
+<section>
+  <title>Linear Equations</title>
+  <example>
+    <statement>
+      <p>
+        Most people's favorite version of a linear equation is this:
+        <me>
+          y  =mx + b\qquad \text{ ``slope-intercept form'' }
+        </me>
+        where
+        <md>
+          <mrow>m \amp  = \text{ slope }   (i.e.\ the ratio of how
+          much the line rises,
+          divided by how much the line goes horizontally),</mrow>
+          <mrow>b \amp  = y\text{ -intercept  (i.e. where the
+          line hits the \(y\)-axis). }</mrow>
+        </md>
+      </p>
+
+      <p>
+        Graph the following lines on the graphs paper below.
+
+        <ol>
+          <li>
+            <p>
+              <m>y=3x+2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y=-\frac{1}{2}x -5</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y=-\frac{2}{3}x+5</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y=5x-7</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        \begin{beforesolutions}
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-5) grid (5,5);
+        \draw (-5,5) node[fill=white]{(a)};
+        \draw[very thick,->](-5,0)--(5,0);
+        \draw[very thick,->](0,-5)--(0,5);\end{tikzpicture}]]></latex-image>
+      </image>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-5) grid (5,5);
+        \draw (-5,5) node[fill=white]{(b)};
+        \draw[very thick,->,yshift=3cm](-5,0)--(5,0);
+        \draw[very thick,->](0,-5)--(0,5);\end{tikzpicture}]]></latex-image>
+      </image>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-2) grid (5,8);
+        \draw (-5,8) node[fill=white]{(c)};
+        \draw[very thick,->](-5,0)--(5,0);
+        \draw[very thick,->](0,-2)--(0,8);\end{tikzpicture}]]></latex-image>
+      </image>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-9) grid (5,0);
+        \draw[very thick,->](-5,0)--(5,0);
+        \draw[very thick,->](0,-9)--(0,1);
+        \draw (-5,0) node[fill=white]{(d)};\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        \end{beforesolutions}
+      </p>
+    </statement>
+    <solution>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-5) grid (5,5);
+        \draw (-5,5) node[fill=white]{(a)};
+        \draw[very thick,->](-5,0)--(5,0);
+        \draw[very thick,->](0,-5)--(0,5);
+        \clip (-5,-5) rectangle (5,5);
+        \draw(-5,-13) -- (5,17);\end{tikzpicture}]]></latex-image>
+      </image>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-5) grid (5,5);
+        \draw (-5,5) node[fill=white]{(b)};
+        \draw[very thick,->,yshift=3cm](-5,0)--(5,0);
+        \draw[very thick,->](0,-5)--(0,5);
+        \clip (-5,-5) rectangle (5,5);
+        \draw[yshift=3cm](-5,-2.5) -- (5,-7.5);\end{tikzpicture}]]></latex-image>
+      </image>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-2) grid (5,8);
+        \draw (-5,8) node[fill=white]{(c)};
+        \draw[very thick,->](-5,0)--(5,0);
+        \draw[very thick,->](0,-2)--(0,8);
+        \clip (-5,-2) rectangle (5,8);
+        \draw(-5,8.333) -- (5,1.666);\end{tikzpicture}]]></latex-image>
+      </image>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-9) grid (5,0);
+        \draw[very thick,->](-5,0)--(5,0);
+        \draw[very thick,->](0,-9)--(0,1);
+        \draw (-5,0) node[fill=white]{(d)};
+        \clip (-5,-10) rectangle (5,0);
+        \draw(-5,-32) -- (5,18);\end{tikzpicture}]]></latex-image>
+      </image>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The following equations all define a line,
+        but are not in the usual slope-intercept form,
+        i.e.<nbsp />of the form <m>y=mx+b</m>.
+      </p>
+
+      <p>
+        Turn the following equations into slope-intercept, and then graph them below
+
+        <ol>
+          <li>
+            <p>
+              <m>2y + x = - 10</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>3y + 2x = 15</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y = 5(x+2) -17</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y -10 = 3x - 8</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-5) grid (5,5);
+        \draw (-5,5) node[fill=white]{(a)};
+        \draw[very thick,->,yshift=3cm](-5,0)--(5,0);
+        \draw[very thick,->](0,-5)--(0,5);\end{tikzpicture}]]></latex-image>
+      </image>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-2) grid (5,8);
+        \draw (-5,8) node[fill=white]{(b)};
+        \draw[very thick,->](-5,0)--(5,0);
+        \draw[very thick,->](0,-2)--(0,8);\end{tikzpicture}]]></latex-image>
+      </image>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-9) grid (5,0);
+        \draw[very thick,->](-5,0)--(5,0);
+        \draw[very thick,->](0,-9)--(0,1);
+        \draw (-5,0) node[fill=white]{(c)};\end{tikzpicture}]]></latex-image>
+      </image>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale=0.5]
+        \draw (-5,-5) grid (5,5);
+        \draw (-5,5) node[fill=white]{(d)};
+        \draw[very thick,->](-5,0)--(5,0);
+        \draw[very thick,->](0,-5)--(0,5);\end{tikzpicture}]]></latex-image>
+      </image>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>2y + x \amp  = -10</mrow>
+                <mrow>2y \amp  = -x -10</mrow>
+                <mrow>y \amp  = -\frac{1}{2} -5</mrow>
+              </md>
+              This is the same as part (b) in the previous example,
+              and so this is
+              graphed above.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>3y + 2x \amp  = 15</mrow>
+                <mrow>3y \amp  = -2x + 15</mrow>
+                <mrow>y \amp  = -\frac 23 x +5</mrow>
+              </md>
+              This is the same as part (c) in the previous example,
+              and so this is
+              graphed above.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>y \amp = 5(x+2)-17</mrow>
+                <mrow>y \amp  = 5x + 10 - 17</mrow>
+                <mrow>y \amp  = 5x - 7</mrow>
+              </md>
+              This is the same as part (d) in the previous example,
+              and so this is
+              graphed above.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>y - 10 \amp  = 3x-8</mrow>
+                <mrow>y \amp  = 3x -8 +10</mrow>
+                <mrow>y \amp  = 3x +2</mrow>
+              </md>
+              This is the same as part (a) in the previous example,
+              and so this is
+              graphed above.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        In some problems the quickest way to write a linear equation is like
+        this
+        <me>
+          y = m(x-x_0) + y_0 \qquad \text{ ``point-slope
+          form\footnotemark'' }
+        </me>
+        where
+        <md>
+          <mrow>m \amp  = \text{ a given slope } ,</mrow>
+          <mrow>(x_0,y_0) \amp  = \text{ a given point }</mrow>
+        </md>.
+        <ol>
+          \itemsep=\fill
+
+          <li>
+            <p>
+              Find the point-slope form equation of the line through the point <m>(-2,3)</m> with slope <m>5</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Turn the equation from (a) into slope-intercept form.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the point-slope form equation of the line through the point <m>(-2,3)</m> with slope <m>-1/2</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Turn the equation from (c) into slope-intercept form. \handoutfill
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>y \amp  = m(x-x_0) + y_0</mrow>
+                <mrow>y \amp  = 5(x+2)+3</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>y \amp  = 5(x+2)+3</mrow>
+                <mrow>y \amp  = 5x+10 + 13</mrow>
+                <mrow>y \amp  = 5x + 23</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>y \amp  = m(x-x_0) + y_0</mrow>
+                <mrow>y \amp  = -\frac{1}{2}(x+2)+3</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>y \amp  = -\frac{1}{2}(x+2)+3</mrow>
+                <mrow>y \amp  = -\frac{1}{2}x -\frac{1}{2}\cdot 2 +3</mrow>
+                <mrow>y \amp  = -\frac{1}{2} - 1 + 3</mrow>
+                <mrow>y \amp  = -\frac{1}{2 }x + 2</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="example_pair_and_share_retirement_point_slope_2">
+    <statement>
+      <p>
+        This example is meant to show that sometimes it makes sense to think about a problem using the point-slope form of a line.
+      </p>
+
+      <p>
+        Suppose that today my son is 52 inches tall and growing at 1.5 inches
+        per year.
+
+        <ol>
+          \itemsep=\fill
+
+          <li>
+            <p>
+              Roughly speaking, how tall will he be tomorrow?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How tall will he be in one year?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How tall will he be in two years?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Write a formula for <m>y</m> (=height) as a function of <m>t</m> (=the calendar year),
+              using point-slope form. \handoutfill
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Basically, tomorrow he'll be about the same height as today:
+              <me>
+                \text{ height tomorrow }  \approx 52
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In one year he will grow roughly another <m>1.5</m> inches
+              <me>
+                \text{ height in one year }  \approx 52 + 1.5
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In two years he should grow another <m>1.5</m> inches twice
+              <me>
+                \text{ height in two years }  \approx 52 + 1.5(2)
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>\text{ height in a bunch of years }  \amp  = 52 + 1.5 \times (\text{ \# of years } )</mrow>
+                <mrow>\amp  = 52 + 1.5 \times (t - \the\year)</mrow>
+              </md>
+              Note that this is the point-slope equation:
+              <md>
+                <mrow>y \amp  = 52 + 1.5 (t-\the\year)</mrow>
+                <mrow>y \amp  = y_0\, + \ m\  (x-\ x_0)</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example xml:id="example_pair_and_share_graphing_point_slope_1">
+    <statement>
+      <p>
+        This example is meant to show that it's actually quite easy to graph a
+        line in point-slope form.
+
+        <ol>
+          <li>
+            <p>
+              On the graph paper below,
+              graph the point <m>(5,7)</m> with a circle about like this \tikz\draw[fill=black] circle (2pt);
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Add to the graph a second large point, \tikz\draw[fill=black] circle (2pt);
+              that is <m>2</m> places to the right right and <m>3</m> places up;
+              mark the distances of <m>2</m> and <m>3</m> with dashed lines.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Draw a line through the two points you have labeled.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Describe what the graph you made has to do with the line <m>y=\frac{3}{2}(x-5)+7</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[xscale=0.5,yscale=0.4]
+        \foreach \x in {1,2,...,10} \xtickmark{\x};
+        \foreach \y in {1,2,...,12} \ytickmark{\y};
+        \draw[very thick,->](0,0)--(10.5,0);
+        \draw[very thick,->](0,0)--(0,12.5);\end{tikzpicture}]]></latex-image>
+      </image>
+    </statement>
+    <solution>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[xscale=0.5,yscale=0.4]
+        \foreach \x in {1,2,...,10} \xtickmark{\x};
+        \foreach \y in {1,2,...,12} \ytickmark{\y};
+        \draw[very thick,->](0,0)--(10.5,0);
+        \draw[very thick,->](0,0)--(0,12.5);
+        \draw[fill] (5,7) circle (4pt);
+        \draw[fill] (7,10) circle (4pt);
+        \draw[dashed] (5,7) -- ++ (2,0) -- ++ (0,3);
+        \draw (3,4) -- (9,13);\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        The first lesson is that it was easy to draw this line geometrically:
+        draw one point, count over and up, draw a second point.
+        The second lesson is that we can see this information in the equation <m>y=\frac 32 (x-5)+7</m>.
+        The <q><m>5</m></q> and the <q><m>7</m></q> is the point we start with.
+        And the slope <q><m>\frac 32</m></q>
+        is pretty much where we always see it.
+        So really, this shouldn't be any harder than using the <m>y=mx+b</m> equation.
+      </p>
+    </solution>
+  </example>
+</section>
+

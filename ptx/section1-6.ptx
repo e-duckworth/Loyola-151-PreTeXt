@@ -1,0 +1,297 @@
+
+
+<section>
+  <title>Quadratics</title>
+  <example>
+    <statement>
+      <p>
+        A quadratic function has the following form
+        <me>
+          y = ax^2+bx+c
+        </me>
+      </p>
+
+      <p>
+        Match the following quadratics with their graphs: see if you can do
+        this without using your calculator.
+
+        <ol>
+          <li>
+            <p>
+              <m>y=x^2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y=(x+2)^2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y=x^2+2</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y=-2x^2-3x+5</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y=3x^2-3x-5</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        \begin{beforesolutions}
+      </p>
+
+      <p>
+        { <image width="28%" source="images/" /> }
+      </p>
+
+      <p>
+        { <image width="28%" source="images/" /> }
+      </p>
+
+      <p>
+        { <image width="28%" source="images/" /> }
+      </p>
+
+      <p>
+        { <image width="28%" source="images/" /> }
+      </p>
+
+      <p>
+        { <image width="28%" source="images/" /> }
+      </p>
+
+      <p>
+        \end{beforesolutions}
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <image width="28%" source="images/" />
+      </p>
+
+      <p>
+        <image width="28%" source="images/" />
+      </p>
+
+      <p>
+        <image width="28%" source="images/" />
+      </p>
+
+      <p>
+        <image width="28%" source="images/" />
+      </p>
+
+      <p>
+        <image width="28%" source="images/" />
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Factoring a quadratic means to write it as a product.
+        Usually you
+        shouldn't bother to factor a quadratic unless the <m>x^2</m>-coefficient
+        equals <m>1</m>.
+        In that case, you're trying to write it like this:
+        <me>
+          y=x^2+bx+c = (x+d)(x+e)
+        </me>
+      </p>
+
+      <p>
+        There are various tricks in finding <m>d</m> and <m>e</m>,
+        but honestly, in this
+        case, I usually just guess and check as follows: (1) guess two values,
+        <m>d</m> and <m>e</m>,
+        that multiply together to give you <m>c</m>, and then (2)
+        check to see if they add up to <m>b</m>.
+        Note: when I write <q><m>+b</m></q> and
+        <q><m>+c</m></q> and say <q>add</q>
+        I'm also including negative numbers in there.
+
+        <ol>
+          \itemsep=\fill
+
+          <li>
+            <p>
+              Factor and solve <m>x^2+2x+1=0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Factor and solve <m>x^2+3x+2=0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Factor and solve <m>x^2-3x+2=0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Factor and solve <m>x^2-x-2=0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Factor and solve <m>x^2-x-12=0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Factor and solve <m>x^2-8x+12=0</m>. \handoutfill
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>x^2+2x+1 \amp  =0</mrow>
+                <mrow>(x+1)(x+1) \amp  = 0</mrow>
+                <mrow>x\amp  = -1</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>x^2+3x+2 \amp  = 0</mrow>
+                <mrow>(x+2)(x+1) \amp  = 0</mrow>
+                <mrow>x \amp  = -2, -1</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>x^2-3x+2 \amp  = 0</mrow>
+                <mrow>(x-2)(x-1) \amp  = 0</mrow>
+                <mrow>x \amp  = 1,2</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>x^2-x-2 \amp  = 0</mrow>
+                <mrow>(x-2)(x+1) \amp  =0</mrow>
+                <mrow>x \amp  = -1,2</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>x^2-x-12 \amp  = 0</mrow>
+                <mrow>(x-4)(x+3) \amp  = 0</mrow>
+                <mrow>x \amp  = -3,4</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>x^2-8x+12 \amp  = 0</mrow>
+                <mrow>(x-10)(x+2) \amp  = 0</mrow>
+                <mrow>x=-2,10</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        A lot of times it's not worth factoring a quadratic, or it may be
+        impossible.
+        In these cases, just use the quadratic formula
+        <me>
+          ax^2+bx+c = 0 
+          \Longrightarrow  
+          x = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
+        </me>
+        <ol>
+          \itemsep=\fill
+
+          <li>
+            <p>
+              Apply the quadratic formula to <m>x^2-x-12=0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Apply the quadratic formula to <m>2x^2+3x-2=0</m>. \handoutfill
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>x \amp  = \frac{+1 \pm \sqrt{(-1)^2 -4(1)(-12)}}{2(1)}</mrow>
+                <mrow>\amp  = \frac{1 \pm \sqrt{1+48}}{2}</mrow>
+                <mrow>\amp  = \frac{1 \pm \sqrt{49}}{2}</mrow>
+                <mrow>\amp  = \frac{1 \pm 7}{2}</mrow>
+                <mrow>\amp  = \frac{8}{2}, \frac{-6}{2}</mrow>
+                <mrow>\amp  = 4, -3</mrow>
+              </md>
+              (Note:
+        this is the same as part (e) in the previous example.)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>x \amp  = \frac{-3 \pm \sqrt{(3)^2 -4(2)(-2)}}{2(2)}</mrow>
+                <mrow>\amp  = \frac{-3 \pm \sqrt{9+16}}{4}</mrow>
+                <mrow>\amp  = \frac{-3 \pm \sqrt{25}}{4}</mrow>
+                <mrow>\amp  = \frac{-3 \pm 5}{4}</mrow>
+                <mrow>\amp  = \frac{2}{4}, \frac{-8}{4}</mrow>
+                <mrow>\amp  = 1/2, -2</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

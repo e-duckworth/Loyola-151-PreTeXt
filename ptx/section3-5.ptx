@@ -1,0 +1,274 @@
+
+
+<section>
+  <title>Marginal Cost and Revenue</title>
+  <example>
+    <statement>
+      <p>
+        It costs <dollar />2500 to produce 1350 items and it costs <dollar />2545 to produce 1360 items.
+        What is the approximate marginal cost when producing 1350 items?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We don't have enough information to solve this exactly but we can
+        approximate it:
+        <md>
+          <mrow>MC(1350) \amp  = \text{ Derivative at } q=1350</mrow>
+          <mrow>\amp  \approx \frac{C(1360)-C(1350)}{1360-1350}</mrow>
+          <mrow>\amp   = \frac{2545 - 2500}{1360-1350}</mrow>
+          <mrow>\amp   = \frac{45}{10}</mrow>
+          <mrow>\amp   = 4.5</mrow>
+          <mrow>\amp  \kern-2ex MC \approx \dollar4.50\text{ per item }</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 4*</title>
+    <statement>
+      <p>
+        Figure 2.55 shows a total cost function, <m>C(q)</m>:
+        <image width="50%" source="images/" />
+      </p>
+
+      <p>
+        { Figure 2.55}
+
+        <ol>
+          <li>
+            <p>
+              Estimate the marginal cost when the production level is 20 and interpret it.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Is the marginal cost greater at <m>q = 5</m> or at <m>q = 30</m>?
+              Explain.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Is the marginal cost greater at <m>q = 20</m> or at <m>q = 40</m>?
+              Explain.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              The best way to do this graphically is to put a ruler on the graph at <m>q=20</m> and make it as close to a tangent line as you can.
+              Then draw the line and estimate some points on the line.
+              Maybe you get something like this:
+              <image> <latex-image><![CDATA[\begin{tikzpicture}\draw node{\includegraphics[width=2.5in]{Images/s2-5prob4}}; \draw[very thick,red] (-1.5,-0.75) -- ++ (3.3,1);\end{tikzpicture}]]></latex-image> </image> It looks like when <m>q = 20</m>,
+              we have <m>C = 200)</m> so we have one point <m>(20,\ 200)</m>.
+              Another point on the tangent line might be <m>(50,\ 300)</m>.
+              This tangent line would have slope of <m>m = \dfrac{300-200}{50-20} = \dfrac{100}{30} = \dfrac{10}{3}</m>,
+              so marginal cost would at <m>q = 20</m> is estimated to be about <m>10/3 = 3.\overline{3}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              By looking at the tangent lines when <m>q = 5</m> and <m>q = 30</m>,
+              both would have positive slope but at <m>q = 5</m> the line would be steeper,
+              thus the slope would be greater.
+              Thus marginal cost is greater at <m>q = 5</m> than at <m>q = 30</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              By looking at the tangent lines when <m>q = 20</m> and <m>q = 40</m>,
+              both would have positive slope but at <m>q = 40</m> the line would be steeper,
+              thus the slope would be greater.
+              Thus marginal cost is greater at <m>q = 40</m> than at <m>q = 20</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 8</title>
+    <statement>
+      <p>
+        Figure 2.57 shows part of the graph of cost and revenue for a car
+        manufacturer.
+        Which is greater, marginal cost or marginal revenue,
+        at
+
+        <ol>
+          <li>
+            <p>
+              <m>q_1</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>q_2</m>?
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <image width="50%" source="images/" />
+      </p>
+
+      <p>
+        { Figure 2.57}
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Remember <em>not</em> to look at the gap between the two lines,
+        or at which line is higher at which point.
+        Rather, look at the slopes of the two lines,
+        at the points <m>q_1</m> and <m>q_2</m>.
+        Since the graphs are lines, the slopes don't change,
+        and we can see that marginal revenue is higher for at both points since the slope of the revenue curve is greater than the slope of the cost curve at both points.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        To produce 2000 items, the total cost is <dollar />4000 and the marginal
+        cost is <dollar />15 per item.
+        Estimate the costs of producing:
+
+        <ol>
+          <li>
+            <p>
+              2001 items
+            </p>
+          </li>
+
+          <li>
+            <p>
+              1999 items
+            </p>
+          </li>
+
+          <li>
+            <p>
+              2050 items
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              With marginal cost being <dollar />15 when <m>q = 2000</m>,
+              this approximates
+              the additional cost of producing <m>2001</m> items.
+              Since it costs
+              <dollar />4000 to produce 2000 items,
+              the cost of producing 2001 items is
+              estimated to be <dollar />4015.
+              We can summarize all of this in a linear
+              equation:
+              <md>
+                <mrow>C(2001) \amp  \approx C(2000) + MC(2000) \times \Delta q</mrow>
+                <mrow>\amp  = 4000 + 15 \times 1</mrow>
+                <mrow>\amp  = \dollar4015</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              With marginal cost being <dollar />15 when <m>q = 2000</m>,
+              this approximates
+              the additional cost of producing <m>2001</m> items.
+              This could also be
+              interpreted as the amount of money saved by producing one fewer
+              item.
+              Since it costs <dollar />4000 to produce 2000 items,
+        the cost of
+              producing 1999 items is estimated to be
+              <m>\dollar4000 - \dollar15 = \dollar3985</m>:
+              <md>
+                <mrow>C(1999) \amp  \approx C(2000) + MC(2000) \times \Delta q</mrow>
+                <mrow>\amp  = 4000 + 15 \times (-1)</mrow>
+                <mrow>\amp  = \dollar3985</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              With marginal cost being <dollar />15 when <m>q = 2000</m>,
+              this approximates
+              the additional cost of producing one more item.
+              Thus to produce 50
+              more items,
+              the additional cost is estimated to be <m>15(50) = 750</m>.
+              Since it costs <dollar />4000 to produce 2000 items,
+        the cost of producing
+              2050 items is estimated to be <m>4000 + 750 = \dollar4750</m>:
+              <md>
+                <mrow>C(2050) \amp  \approx C(2000) + MC(2000) \times \Delta q</mrow>
+                <mrow>\amp  = 4000 + 15 \times 50</mrow>
+                <mrow>\amp  = \dollar4750</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 12</title>
+    <statement>
+      <p>
+        Cost and revenue functions for a charter bus company are shown in Figure 2.58.
+        Should the company add a 50th bus?
+        How about a 90th?
+        Explain your answers using marginal revenue and marginal cost. <image width="50%" source="images/" />
+      </p>
+
+      <p>
+        { Figure 2.58}
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to look at the difference between the marginal costs and marginal revenues.
+        At <m>q = 50</m>,
+        the marginal revenue (slope at <m>R(50)</m>) is greater than the marginal cost (slope at <m>C(50)</m>)
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}\draw node{\includegraphics[width=2.5in]{Images/s2-5prob12}};
+        \draw[very thick, red] (-1.5,-1.6) -- ++ (3,1.1) node[right]{\(m=C(50)\)};\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        So the additional revenue of adding the 50th bus will be greater than the additional cost.
+        So yes, it should add a 50th bus.
+      </p>
+
+      <p>
+        At <m>q = 90</m>,
+        the marginal revenue (slope at <m>R(90)</m>) is less than the marginal cost (slope at <m>C(90)</m>, so no,
+        the 90th bus should not be added.
+      </p>
+    </solution>
+  </example>
+</section>
+

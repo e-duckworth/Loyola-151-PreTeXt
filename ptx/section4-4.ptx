@@ -1,0 +1,264 @@
+
+
+<section>
+  <title>Product and Quotient Rules</title>
+  <example>
+    <statement>
+      <p>
+        Use the Product Rule to differentiate <m>y = x^2 e^{5x-3}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        When you are first learning the product rule, you may need to take a
+        couple of extra steps to keep the notation straight: (1) Write the
+        product rule formula on your paper, right in your solution.
+        If you
+        write this every time, I promise that you'll be able to remember it
+        better, and you'll be able to use it better. (2) Label the parts of
+        the function with <m>f</m> and <m>g</m>,
+        then find <m>f'</m> and <m>g'</m> and then put
+        the parts together where they go in the product rule.
+        <md>
+          <mrow>(fg)' \amp  = f'\cdot g + f\cdot g'</mrow>
+          <mrow>f     \amp  = x^2</mrow>
+          <mrow>g     \amp  = e^{5x-3}</mrow>
+          <mrow>f'    \amp  = 2x</mrow>
+          <mrow>g'    \amp  = e^{(\text{ stuff } )}\cdot (\text{ stuff } )'</mrow>
+          <mrow>\amp  = e^{5x-3}(5)</mrow>
+          <mrow>y'    \amp  = f'\cdot g + f\cdot g'</mrow>
+          <mrow>\amp  = 2x \cdot e^{5x-3} + x^2 \cdot e^{5x-3}(5)</mrow>
+        </md>
+      </p>
+
+      <p>
+        It's not really necessary to do anything else to this answer:
+        it's not going to simplify much,
+        and we weren't asked to factor it or anything.
+        It is traditional to put that last <q>5</q>
+        in front of the <m>x^2</m>, but it's not mandatory.
+      </p>
+
+      <p>
+        Let me show you how you might solve this problem if you've been doing
+        product rules for a while.
+        In that case, you might not label <m>f</m> and
+        <m>g</m> and <m>f'</m> and <m>g'</m>.
+        You might just identify them in your head, and
+        say the following words to yourself as you go: <q>derivative of the
+        1st, times the second, plus the 1st times the derivative of the
+        second.</q>
+        <me>
+          \underbrace{2x}_{\rotatebox{-90}{deriv. of 1st}}
+          \underbrace{\cdot \,e^{5x-3}}_{\rotatebox{-90}{times 2nd}} 
+          +
+          \underbrace{x^2}_{\rotatebox{-90}{1st}}
+          \underbrace{\cdot \,e^{5x-3}(5)}_{\rotatebox{-90}{times deriv of 2nd}}
+        </me>
+      </p>
+
+      <p>
+        That may seem like a lot to keep track of, or do in your head,
+        but if you just write and say one part at a time, it's not so bad.
+        In any case,
+        do not feel like you should try to do more in your head;
+        feel free to label everything and arrange all the parts like we did in our first solution above.
+        Just know, that if you want to,
+        you can start to label less as you go.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the derivatives of the following:
+
+        <ol>
+          <li>
+            <p>
+              <m>y = x^3(2x-7)^4</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y = 3t^4 \, \ln(t)</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Both of these involve the Product Rule.
+      </p>
+
+      <p>
+        For (a), the first is <m>x^3</m> and the second is <m>(2x-7)^4</m>.
+        Notice that
+        finding the derivative of the second will involve the Chain Rule.
+        <md>
+          <mrow>y  \amp  = \big[x^3\big] \ \big[(2x-7)^4\big]</mrow>
+          <mrow>y' \amp  = \big[x^3\big]' \ (2x-7)^4 + x^3\ \big[(2x-7)^4\big]'</mrow>
+          <mrow>\amp  = \big[2x^2\big](2x-7)^4 + x^3\big[4(2x-7)^3(2)\big]</mrow>
+          <mrow>\amp  = 2x^2(2x-7)^4 + 8x^3(2x-7)^3</mrow>
+        </md>
+      </p>
+
+      <p>
+        Again, you probably shouldn't try to
+        <q>simplify</q> any farther here.
+        We've taken the derivative, and we're done with that;
+        unless there's a reason to factor it, just stop.
+      </p>
+
+      <p>
+        For (b), in addition to the Power Rule and Product Rule,
+        we need to
+        remember that <m>\ddt\ln(t) = \frac{1}{t}</m>.
+        <md>
+          <mrow>y \amp  = \big[3t^4\big]\,\big[\ln(t)\big]</mrow>
+          <mrow>y' \amp  = \big[3t^4\big]'\ln(t) + 3t^4\big[\ln(t)\big]'</mrow>
+          <mrow>\amp  = 12t^3\ln(t) + 3t^4\, \frac{1}{t}</mrow>
+          <mrow>\amp  = 12t^3\ln(t) + 3t^3</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Use the Quotient Rule to differentiate <m>y = \frac{4t+5}{2-3t^2}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        When you are first learning the Quotient Rule, you may need to take
+        a couple of extra steps to keep the notation straight: (1) Write the
+        Quotient Rule formula on your paper, right in your solution.
+        If you
+        write this every time, I promise that you'll be able to remember it
+        better, and you'll be able to use it better. (2) Label the parts of
+        the function with <m>f</m> and <m>g</m>,
+        then find <m>f'</m> and <m>g'</m> and then put
+        the parts together where they go in the Quotient Rule.
+        <md>
+          <mrow>\left(\frac{f}{g}\right)' \amp  = \frac{f'\cdot g - f\cdot g'}{(g)^2}</mrow>
+          <mrow>f \amp  = 4t+5</mrow>
+          <mrow>g \amp  = 2-3t^2</mrow>
+          <mrow>f' \amp  = 4</mrow>
+          <mrow>g' \amp  = -6t</mrow>
+          <mrow>\frac{f'\cdot g - f\cdot g'}{g^2} \amp  = \frac{(4)(2-3t^2)-(4t+5)(-6t)}{(2-3t^2)^2}</mrow>
+        </md>
+      </p>
+
+      <p>
+        As before, just leave it alone and don't try to simplify,
+        unless you've been asked to,
+        or if there's a reason to.
+        In other words,
+        <em>simplify at your own risk</em>. (In case you want to practice,
+        see if you can get <m>\frac{12t^2+30t + 8}{\left(2-3t^2\right)^2}</m> .)
+      </p>
+
+      <p>
+        We can also learn to take the quotient rule without labelling
+        everything, just like we talked about with the Product Rule.
+        Here's
+        how it looks.
+        Say the following words to yourself as you write things
+        down: <q>derivative of the top,
+        times the bottom, minus the top, times
+        the derivative of the bottom,
+        all over the bottom squared.</q>
+        <me>
+          \frac{
+          \overbrace{(4)}^{\rotatebox{-90}{deriv top}}
+          \overbrace{(2-3t^2)}^{\rotatebox{-90}{times bottom}}
+          -
+          \overbrace{(4t+5)}^{\rotatebox{-90}{top}}
+          \overbrace{(-6t)}^{\rotatebox{-90}{times deriv bottom}}
+          }
+          {
+          \underbrace{(2-3t^2)^2}_{\text{ bottom squared } }
+          }
+        </me>
+      </p>
+
+      <p>
+        There's a rhyming mnemonic for this as well:
+        <q>low d-hi minus hi d-low, over the bottom squared, and away we go!</q>.
+        Here, <q>low d-hi</q>
+        means derivative of the top (d-hi) times the bottom, etc.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Let <m>f(x) = \frac{e^x}{2x+e^x}</m>.
+
+        <ol>
+          <li>
+            <p>
+              Find <m>f'(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the equation of the tangent line at <m>x = 0</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        For part (a),
+        we need to find <m>f'(x)</m> (using the Quotient Rule):
+        <md>
+          <mrow>\left(\frac{f}{g}\right)' \amp  = \frac{f'\cdot g - f\cdot g'}{(g)^2}</mrow>
+          <mrow>f'(x) \amp  = \frac{e^x(2x+e^x) - e^x(2+e^x)}{(2x+e^x)^2}</mrow>
+        </md>
+      </p>
+
+      <p>
+        Note that we're using <m>f</m> differently in the second line than in the first one.
+        That's one reason we have to understand the Product Rule and Quotient Rule as more than just moving letters around:
+        we need to understand that in a certain place it's the derivative of the top,
+        not just the letter <m>f'</m>.
+      </p>
+
+      <p>
+        For part (b), we'll fill in
+        (as always)
+        the point-slope equation of a line:
+        <md>
+          <mrow>y \amp  = m(x-x_0)+y_0</mrow>
+          <mrow>x_0 \amp  = 0  \text{ given above }</mrow>
+          <mrow>y_0 \amp  = f(0)</mrow>
+          <mrow>\amp  = \frac{e^0}{0 + e^0}</mrow>
+          <mrow>\amp  = 1</mrow>
+          <mrow>m \amp  = f'(0)</mrow>
+          <mrow>\amp  = \frac{e^0(0+e^0) - e^0(2+e^0)}{(0 + e^0)^2}</mrow>
+          <mrow>\amp  = \frac{1(1) - 1(3)}{1^2}</mrow>
+          <mrow>\amp  = -2</mrow>
+          <mrow>y \amp  = -2(x-0)+1</mrow>
+          <mrow>\amp  = -2x+1</mrow>
+        </md>
+      </p>
+
+      <p>
+        They didn't ask us for it, but just for kicks,
+        here's a graph of <m>f(x)</m> and the tangent line,
+        just to show that we got it right:
+        <image width="56%" source="images/" />
+      </p>
+    </solution>
+  </example>
+</section>
+

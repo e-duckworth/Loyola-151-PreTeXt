@@ -1,0 +1,291 @@
+
+
+<section>
+  <title>Average Cost</title>
+  <example>
+    <title>Problem 2</title>
+    <statement>
+      <p>
+        Figure 4.63 shows cost with <m>q = 10,000</m> marked.
+
+        <ol>
+          <li>
+            <p>
+              Find the average cost when the production level is 10,000 units and interpret it.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Represent your answer to part (a) graphically.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At approximately what production level is average cost minimized?
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <image width="56%" source="images/" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>\text{ average cost }  \amp  = a(q) = \frac{C(q)}{q}</mrow>
+                <mrow>\amp  = \frac{C(10000)}{10000}</mrow>
+                <mrow>\amp  \approx \frac{16000}{10000}</mrow>
+                <mrow>\amp  = \dollar1.60 \text{ per unit }</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Conceptually, our answer to part (a) can be viewed as the slope
+              of a line through <m>(0,0)</m> and <m>(10000,16000)</m>
+              <me>
+                m= \frac{16000-0}{10000-0}
+              </me>
+              So we can picture this slope by adding a line to the above figure:
+              <image>
+                <latex-image><![CDATA[\begin{tikzpicture}\draw[shift={(1.95,2.2)}]node{\includegraphics[width=3in]{s4-5prob2}};
+                \draw[red,very thick](0,0)-- (2.15,2.75);\end{tikzpicture}]]></latex-image>
+              </image>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To minimize the average cost,
+              we would look at different lines from the origin to points on the curve,
+              and we would ask: Out of all such lines,
+              which one has the smallest possible slope?
+              Here I've drawn 4 of them, just to illustrate:
+              <image> <latex-image><![CDATA[\begin{tikzpicture}\draw[shift={(1.95,2.2)}]node{\includegraphics[width=3in]{s4-5prob2}}; \draw[red,very thick](0,0)-- (1.5,2.5); \draw[red,very thick](0,0)-- (2.15,2.75); \draw[red,very thick](0,0)-- (2.75,3); \draw[red,very thick](0,0)-- (3.8,3.6);\end{tikzpicture}]]></latex-image> </image> The last one,
+              that goes to something like <m>q=18,000</m>,
+              is the least steep of all the lines we've added.
+              In fact, it's the least steep one we <em>can</em> add.
+              So that's about where the minimum of average cost occurs.
+              This is really important:
+              notice at the point
+        <m>(q,C) = (18000, 20500)</m> we have that the red line,
+              which represents the average cost,
+              is tangent to <m>C(q)</m>, the total cost.
+              Thus,
+        at this point, the average cost equals the marginal cost.
+              We'll return to this in a later example.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The cost function is <m>C(q) = 1000 + 20q</m>.
+        Find the marginal cost to produce the 200th unit and the average cost of producing 200 units.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The marginal cost is simply the derivative
+        <me>
+          MC(q) = C'(q) = 20
+        </me>
+      </p>
+
+      <p>
+        In other words,
+        marginal cost is constant, and so <m>MC(200)=20</m>.
+      </p>
+
+      <p>
+        The average cost <m>C(200)/200</m>:
+        <me>
+          a(100) = \frac{C(200)}{200} = \frac{1000+20(200)}{200} = 25
+        </me>
+      </p>
+
+      <p>
+        In other words,
+        the added cost of making one additional unit is about <dollar />20,
+        but on average the items have cost <dollar />25 each.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 9</title>
+    <statement>
+      <p>
+        The average cost per item to produce <m>q</m> items is given by
+        <me>
+          a(q) = 0.01q^2 - 0.6q + 13, \text{ for } q > 0
+        </me>.
+        <ol>
+          <li>
+            <p>
+              What is the total cost, <m>C(q)</m>,
+              of producing <m>q</m> goods?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is the minimum marginal cost?
+              What is the practical interpretation of this result?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              At what production level is the average cost a minimum?
+              What is the lowest average cost?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Compute the marginal cost at <m>q = 30</m>.
+              How does this relate to your answer to part (c)?
+              Explain this relationship both analytically and in words.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Since <m>a(q)= \frac{C(q)}{q}</m> we can turn this around and say
+              <m>C(q) = a(q)\times q</m>.
+              This gives
+              <me>
+                C(q) = 0.01q^3 - 0.6q^2 + 13q
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There are two derivatives here:
+              <m>MC</m> equals the derivative of
+              <m>C(q)</m>,
+              but to minimize <m>MC</m> we should take the derivative of <m>MC</m>
+              and set this equal to <m>0</m>:
+              <md>
+                <mrow>MC \amp  = 0.03q^2 - 1.2q + 13</mrow>
+                <mrow>MC' \amp  = 0.06q-1.2</mrow>
+                <mrow>0.06q-1.2 \amp  = 0</mrow>
+                <mrow>q \amp  = 1.2/0.06</mrow>
+                <mrow>\amp  = 20</mrow>
+              </md>
+              Since <m>MC</m> is a parabola opening upward, we know that its only
+              critical point is a minimum.
+              To find out what this minimum is, we
+              plug <m>q = 20</m> into the formula for <m>MC</m> (we plug it into MC because
+              that is the function we are finding the minimum of).
+              We get
+              <m>MC(20) = 1</m> and so
+              <me>
+                \text{ Global Minimum: }   MC= \dollar1\text{ when } q=20
+              </me>
+              On a practical level, it means that when we make <m>20</m> items, we are
+              operating at peak efficiency in the sense that each additional item
+              only has an added cost of <dollar />1 per item.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We will learn in this problem that there are two ways to
+              minimize average cost:
+        find a critical point of <m>a(q)</m> directly, or
+              compare <m>a(q)</m> to <m>MC(q)</m> (we did this earlier on graphs).
+
+              Here's how it looks to find the critical point of <m>a(q)</m> directly:
+              <md>
+                <mrow>a(q) \amp  = 0.01q^2 - 0.6q + 13</mrow>
+                <mrow>a'(q) \amp  = 0.02q - 0.6</mrow>
+                <mrow>0.02q - 0.6 \amp  = 0</mrow>
+                <mrow>q \amp  = \frac{0.6}{0.02} = 30</mrow>
+              </md>
+              Because <m>a(q)</m> is a parabola opening upward,
+        this critical point is
+              a minimum.
+
+              The average cost at this point is
+              <me>
+                a(30) = 0.01(30^2)-0.6(30)+13 = \dollar4 \text{ per item }
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We simply plug in <m>q=30</m> to our formula above for MC
+              <me>
+                MC(30) = 0.03(30^2) -1.2(30)+13 = \dollar4 \text{ per item }
+              </me>
+              This is the same as our answer to part (c).
+              We saw in an earlier
+              example, using graphs,
+        that average cost should be minimized when
+              <m>MC = a(q)</m>, and that's the same thing we found just now.
+              Here's the
+              <q>analytical</q> reason.
+              What that means is that we will take the
+              derivative of <m>a(q)</m>,
+        and set this equal to <m>0</m>,
+              using only general
+              formulas:
+              <md>
+                <mrow>a(q) \amp  = \frac{C(q)}{q}</mrow>
+                <mrow>a'(q) \amp  = \frac{C'(q) \times q - C(q)\times 1}{q^2}</mrow>
+                <mrow>\frac{qC'(q) - C(q)}{q^2} \amp  = 0</mrow>
+                <mrow>qC'(q) - C(q) \amp  = 0</mrow>
+                <mrow>qC'(q) \amp  = C(q)</mrow>
+                <mrow>C'(q) \amp  = \frac{C(q)}{q}</mrow>
+                <mrow>MC \amp  = a(q)</mrow>
+              </md>
+              This gives us the following very useful fact
+              \fbox{<em>average cost has a critical point when </em>
+              <m>MC(q) = a(q)</m>}
+              This should make sense on a practical level as well,
+        using only words
+              that someone could understand without calculus.
+              Say you want to
+              minimize average cost (which you usually do).
+              If at some production
+              level,
+        each item you make costs more than your average, then you
+              should cut back, because you're just increasing the average cost.
+              On
+              the other hand,
+              if at some production level, each item you make costs
+              less than your average,
+        then you should make more, because you're
+              lowering your average cost.
+              When should you stay put, at the current
+              production level?
+              When each item costs the same as the average cost.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

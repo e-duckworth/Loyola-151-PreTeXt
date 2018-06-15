@@ -1,0 +1,310 @@
+
+
+<section>
+  <title>Inflection points</title>
+  <definition>
+    <statement>
+      <p>
+        An graph of <m>f(x)</m> where the concavity changes.
+      </p>
+
+      <p>
+        An inflection point is where <m>f''(x)</m> changes from positive to negative,
+        or from negative to positive.
+      </p>
+    </statement>
+  </definition>
+
+  <example>
+    <statement>
+      <p>
+        Find all critical points and inflection points of the function
+        <me>
+          f(x) = x^3 - 12x + 8
+        </me>.
+      </p>
+
+      <p>
+        Identify each critical point as a local max, local min,
+        or neither.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We start by taking the derivative and setting it equal to <m>0</m>:
+        <md>
+          <mrow>f' (x) \amp  = 3x^2-12</mrow>
+          <mrow>3x^2-12 \amp  = 0</mrow>
+          <mrow>3(x^2-4) \amp  = 0</mrow>
+          <mrow>3(x+2)(x-2) \amp  = 0</mrow>
+          <mrow>x= -2, 2</mrow>
+        </md>
+      </p>
+
+      <p>
+        Our critical numbers are <m>-2</m> and <m>2</m>.
+        We'll test these with the
+        second derivative test:
+        <md>
+          <mrow>f''(x) \amp  = 6x</mrow>
+          <mrow>f''(-2) \amp  = -12 \Rightarrow f'' \text{ is } -, f\text{ is C.D., graph is
+          <image>
+            <latex-image><![CDATA[\begin{tikzpicture}[very thick]
+            \draw (0,0) parabola bend (0.5,0.5) (1,0);\end{tikzpicture}]]></latex-image>
+          </image>
+          }</mrow>
+          <mrow>f''(2) \amp  = 12 \Rightarrow f'' \text{ is } +, f\text{ is C.U., graph is \GenericConcaveUp }</mrow>
+        </md>
+      </p>
+
+      <p>
+        Therefore we can identify the behavior at each critical number
+        <md>
+          <mrow>x \amp  = -2 \text{ local max }</mrow>
+          <mrow>x \amp  = 2 \text{ local min }</mrow>
+        </md>
+      </p>
+
+      <p>
+        Now we find the inflection points.
+        We start by setting the second
+        derivative equal to <m>0</m>:
+        <md>
+          <mrow>f''(x) \amp  = 0</mrow>
+          <mrow>6x \amp  = 0</mrow>
+          <mrow>x \amp  = 6</mrow>
+        </md>
+      </p>
+
+      <p>
+        It's easy to see that <m>f''(x) = 6x</m> is negative to the left of <m>x=0</m>
+        (just plug any negative number into <m>6x</m>)
+        and it's positive to the right of <m>x=0</m>.
+        Thus, <m>x=0</m> is the location of an inflection point.
+      </p>
+
+      <p>
+        Finally, we calculate the <m>y</m>-values at the critical points and the
+        inflection point.
+        We do this by plugging back into the original <m>f</m>
+        (not <m>f'</m> or <m>f''</m>!).
+        <md>
+          <mrow>f(x) \amp  = x^3-12x+8</mrow>
+          <mrow>f(-2) \amp  = 24</mrow>
+          <mrow>f(0) \amp  = 8</mrow>
+          <mrow>f(2) \amp  = -8</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find all inflection points of each of the functions below
+        <me>
+          f(x)  = x^9 \text{ and }  g(x) = x^6
+        </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We start by finding where the second derivative of each of these is
+        <m>0</m>, and then look at whether the second derivative is positive or
+        negative on either side of these numbers.
+        <md>
+          <mrow>f'(x) \amp  = 9x^8</mrow>
+          <mrow>f''(x) \amp  = 72x^7</mrow>
+          <mrow>72 x^7 \amp  = 0</mrow>
+          <mrow>x\amp  = 0</mrow>
+        </md>
+      </p>
+
+      <p>
+        Now we look to the left and the right of <m>0</m>.
+        For instance, is
+        <m>f''(x)</m> positive or negative when we look at <m>x=-1</m>?
+        <md>
+          <mrow>f''(-1) \amp  = - \Rightarrow f \text{ is C.D. }</mrow>
+          <mrow>f''(1) \amp  = + \Rightarrow f \text{ is C.U. }</mrow>
+        </md>
+      </p>
+
+      <p>
+        In other words,
+        <m>f</m> changes from C.D. to C.U. at <m>x=0</m>, so <m>x=0</m> is
+        the location of an inflection point.
+        <md>
+          <mrow>g'(x) \amp  = 6x^5</mrow>
+          <mrow>g''(x) \amp  = 30x^4</mrow>
+          <mrow>30 x^4 \amp  = 0</mrow>
+          <mrow>x\amp  = 0</mrow>
+        </md>
+      </p>
+
+      <p>
+        Now we look to the left and the right of <m>0</m>.
+        For instance, is
+        <m>g''(x)</m> positive or negative when we look at <m>x=-1</m>?
+        <md>
+          <mrow>g''(-1) \amp  = + \Rightarrow g \text{ is C.U. }</mrow>
+          <mrow>g''(1) \amp  = + \Rightarrow g \text{ is C.U. }</mrow>
+        </md>
+      </p>
+
+      <p>
+        In other words, <m>g</m> does <em>not</em>
+        change concavity at <m>x=0</m>,
+        so <m>x=0</m> is not the location of an inflection point.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem <hash />26</title>
+    <statement>
+      <p>
+        Sketch a possible graph of <m>y = f(x)</m>,
+        using the given information about the derivatives <m>y' = f'(x)</m> and
+        <m>y'' = f''(x)</m>. (Assume that the function is defined and continuous for all real <m>x</m>.)
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}\matrix (DerivGrid) [matrix of math nodes,row sep = 5pt]
+        {
+        &amp;         &amp; y' = 0  &amp;     &amp;       &amp;   &amp; y' = 0 &amp;      &amp;    \
+        &amp; y'>0    &amp;         &amp;       &amp; y'>0  &amp;   &amp;        &amp; y'<0 &amp;    \
+        &amp;         &amp;         &amp;       &amp;       &amp;   &amp;        &amp;      &amp;  \
+        &amp;         &amp; x_1     &amp;       &amp; x_2   &amp;   &amp; x_3    &amp;      &amp;    \
+        &amp;         &amp; y'' = 0 &amp;       &amp; y''=0 &amp;   &amp;        &amp;      &amp;    \
+        &amp; y'' &lt; 0 &amp;         &amp; y''>0 &amp;       &amp;   &amp; y''<0  &amp;      &amp;    \
+        &amp;         &amp;       &amp;       &amp;     &amp;   &amp;      &amp;      &amp;  \
+        };
+        \begin{scope}[<->,thick]
+        \draw (DerivGrid-3-1.west) -- (DerivGrid-3-9.east);
+        \draw (DerivGrid-7-1.west) -- (DerivGrid-7-9.east);
+        \end{scope}
+        \begin{scope}[densely dotted]
+        \draw (DerivGrid-1-3.south) -- (DerivGrid-4-3.north) 
+        (DerivGrid-4-3.south) -- (DerivGrid-5-3.north)
+        (DerivGrid-5-3.south) -- (DerivGrid-7-3.south);
+        \draw (DerivGrid-2-5.south) -- (DerivGrid-4-5.north) 
+        (DerivGrid-4-5.south) -- (DerivGrid-5-5.north)
+        (DerivGrid-5-5.south) -- (DerivGrid-7-5.south);
+        \draw (DerivGrid-1-7.south) -- (DerivGrid-4-7.north) 
+        (DerivGrid-4-7.south) -- (DerivGrid-6-7.north)
+        (DerivGrid-6-7.south) -- (DerivGrid-7-7.south);
+        \end{scope}\end{tikzpicture}]]></latex-image>
+      </image>
+    </statement>
+    <solution>
+      <p>
+        From the information in the chart,
+        we see that <m>y'=0</m> at <m>x_1</m> and <m>x_3</m>.
+        This means that <m>x_1</m> and <m>x_3</m> are critical numbers.
+      </p>
+
+      <p>
+        Can we say if these points are local max or mins?
+        Yes.
+        We have that <m>y'</m> is positive on both sides of <m>x_1</m>,
+        and <m>y'</m> changes from positive to negative at <m>x_3</m>.
+        We can summarize this info in a picture
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}\draw (-0.5,0) -- (3.5,0);
+        \foreach \x in {1,3} \xtickmark[x_\x]{\x};
+        \draw (0,0) node[above]{\(f:\)};
+        \draw (0.5,0) node[above]{\(\nearrow\)};
+        \draw (1.5,0) node[above]{\(\nearrow\)};
+        \draw (3.5,0) node[above]{\(\searrow\)};\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        This makes it easy to see that <m>x_1</m> is neither a max nor a min, but,
+        on the other hand, <m>x_3</m> is a local max.
+      </p>
+
+      <p>
+        From the information in the chart,
+        we see that <m>y''=0</m> at <m>x_1</m> and <m>x_2</m>.
+        This means that <m>x_1</m> and <m>x_3</m> are possible locations of inflection points.
+      </p>
+
+      <p>
+        Can we say if inflection points really occur here?
+        Yes.
+        We have that <m>y''</m> changes from negative to positive at <m>x_1</m>,
+        and changes back to negative again at <m>x_2</m>.
+        We can summarize this info in a picture
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}\draw (-0.5,0) -- (3.5,0);
+        \foreach \x in {1,2} \xtickmark[x_\x]{\x};
+        \draw (0,0) node[above]{\(f: \)};
+        \draw (0.5,0) node[above]{C.D.};
+        \draw (1.5,0) node[above]{C.U.};
+        \draw (2.5,0) node[above]{C.D.};\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        This makes it easy to see that <m>x_1</m> and <m>x_2</m> are both locations of inflection points.
+        Here's a sketch of the shape that <m>f</m> must have (I only claim this is the shape:
+        the <m>y</m>-values could be positive or negative,
+        the whole picture could be stretched in one direction,
+        or compressed, etc.)
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}\draw (0,0) parabola bend (1,1) (1,1) 
+        parabola (2,2)
+        parabola bend (3,3) (3,3) 
+        parabola (4,2);
+        \begin{scope}[dashed]
+        \draw (1,1) -- (1,0) node[below]{\(x_1\)};
+        \draw (2,2) -- (2,0) node[below]{\(x_2\)};
+        \draw (3,3) -- (3,0) node[below]{\(x_3\)};
+        \end{scope}\end{tikzpicture}]]></latex-image>
+      </image>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Graph a function with the given properties.
+
+        <ol>
+          <li>
+            <p>
+              Has local minimum and global minimum at <m>x = 3</m> but no local or global maximum.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Has local minimum at <m>x = 3</m>,
+              local maximum at <m>x = 8</m>,
+              but no global maximum or minimum.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Has no local or global maxima or minima.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Has local and global minimum at <m>x = 3</m>,
+              local and global maximum at <m>x = 8</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Discussion opportunity.
+      </p>
+    </solution>
+  </example>
+</section>
+

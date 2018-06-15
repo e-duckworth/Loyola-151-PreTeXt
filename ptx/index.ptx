@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mathbook xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+<docinfo>
+<macros>
+\newcommand{\markpoint}{node[point]{}}
+\renewcommand{\arraystretch}{1.5}
+\newcommand{\deriv}[2]{\frac{d#1}{d#2}}
+\renewcommand{\arraystretch}{10}
+\newcommand{\ddx}{\deriv {}x}
+\deflocal maximum{at $x=c$ if $f(c) \ge f(x)$ for $x$ near $c$.}
+\newcommand{\ddq}{\deriv {}q}
+\deflocal minimum{at $x=c$ if $f(c) \le f(x)$ for $x$ near $c$.}
+\newcommand{\ddt}{\deriv {}t}
+\defcritical point{of a function $f$ if either}
+\newcommand{\dx}{\,dx}
+\defcritical number{of $f$.\\}
+\newcommand{\du}{\,du}
+\defcritical value{of $f$.    }
+\newcommand{\sfrac}[2]{\frac{\,#1\,}{#2}}
+\definflection point{for a function $f(x)$ is a point on the}
+\newcommand{\inv}{^{-1}}
+\defelasticity{$E$ defined as}
+\newcommand{\eval}{\Big|}
+\defelastic demand{\\}
+\newcommand{\abs}[1]{\left\lvert {#1} \right\rvert}
+\definelastic demand{\end{itemize}}
+\newcommand{\inside}[1]{{\color{insidecolor}#1}}
+\newcommand{\chain}[4][(0ex,0ex)]{
+\begin{tikzpicture}[every node/.style={font=\normalsize}]
+\node[name = lhs, anchor = base west] at (0,0) {$#2=$};
+\node[name = outside, anchor = base west, node distance = 0pt, inner sep = 0pt] 
+at (lhs.base east) {$\color{outsidecolor}#3$};
+\node[name = deriv inside, anchor = base west, node distance = 0pt, inner sep = 0pt] 
+at (outside.base east) {${}\cdot {\color{derivcolor}#4}$};
+\node[name = outside target] at (outside.south west){};
+\node[shift={#1},name = inside target] at (outside.south){};
+\node[name = deriv inside target] at (deriv inside.south){};
+\node[name = text for outside, node distance = 2cm, below left of = outside target] {\begin{tabular}{c}deriv. of\\ outside\end{tabular}};
+\node[name = text for inside, node distance = 2cm, below of = inside target] {\begin{tabular}{c}don't\\ change\\inside\end{tabular}};
+\node[name = text for deriv inside, node distance = 2cm, below right of = deriv inside target] {\begin{tabular}{c}deriv. of\\ inside\end{tabular}};
+\draw[->] (text for outside) -- (outside target.south west);
+\draw[->] (text for inside) -- (inside target);
+\draw[->] (text for deriv inside) -- (deriv inside target);
+\end{tikzpicture}
+}
+\newcommand{\lnchain}[4][(0ex,0ex)]{
+\begin{tikzpicture}[every node/.style={font=\normalsize}]
+\node[name = lhs, anchor = base west] at (0,0) {$#2=$};
+\node[name = outside, anchor = base west, right of = lhs, inner sep = 0pt] at (lhs.base east) {$\color{outsidecolor}#3$};
+\node[name = deriv inside, anchor = base west, node distance = 0pt, inner sep = 0pt, ] at (outside.base east) {${}\cdot {\color{derivcolor}#4}$};
+\node[name = outside target] at (outside.west){};
+\node[shift={#1},name = inside target] at (outside.south){};
+\node[name = deriv inside target] at (deriv inside.south){};
+\node[name = text for outside, node distance = 2cm, below left of = outside target] {\begin{tabular}{c}deriv. of\\ outside\end{tabular}};
+\node[name = text for inside, node distance = 2cm, below of = inside target] {\begin{tabular}{c}don't\\ change\\inside\end{tabular}};
+\node[name = text for deriv inside, node distance = 2cm, below right of = deriv inside target] {\begin{tabular}{c}deriv. of\\ inside\end{tabular}};
+\draw[->,bend right] (text for outside) -- (outside target.west);
+\draw[->] (text for inside) -- (inside target);
+\draw[->] (text for deriv inside) -- (deriv inside target);
+\end{tikzpicture}
+}
+\newcommand{\IncreaseStraight}{\begin{tikzpicture}[very thick,baseline=0.5cm]
+\draw[scale=0.9] (0,0) -- (1,1);
+\end{tikzpicture}}
+\newcommand{\IncreaseConcaveUp}{\begin{tikzpicture}[very thick,baseline=0.35cm]
+\draw (0,0) arc (280:350:1);
+\end{tikzpicture}}
+\newcommand{\IncreaseConcaveDown}{\begin{tikzpicture}[very thick,baseline=-0.5cm]
+\draw[scale=-1] (0,0) arc (280:350:1);
+\end{tikzpicture}}
+\newcommand{\DecreaseStraight}{\begin{tikzpicture}[very thick,baseline=-0.5cm]
+\draw[scale=0.9] (0,0) -- (1,-1);
+\end{tikzpicture}}
+\newcommand{\DecreaseConcaveUp}{\begin{tikzpicture}[very thick,baseline=-0.5cm]
+\draw (0,0) arc (190:260:1);
+\end{tikzpicture}}
+\newcommand{\DecreaseConcaveDown}{\begin{tikzpicture}[very thick,baseline=0.35cm]
+\draw[scale=-1] (0,0) arc (190:260:1);
+\end{tikzpicture}}
+\newcommand{\GenericConcaveDown}{\begin{tikzpicture}[very thick]
+\draw (0,0) parabola bend (0.5,0.5) (1,0);
+\end{tikzpicture}}
+\newcommand{\GenericConcaveUp}{\begin{tikzpicture}[very thick,yscale=-1]
+\draw (0,0) parabola bend (0.5,0.5) (1,0);
+\end{tikzpicture}}
+\newcommand{\blank}{\underline{\hspace{0.5in}}}
+\newcommand{\def}[1]{\textbf{#1}}
+\newcommand{\handoutpagebreak}{}
+\newcommand{\graphlabel}[2]{\makebox[0in][r]{#1}{#2}}
+\newcommand{\handoutfill}{}
+\newcommand{\handoutitemsep}{}
+\newcommand{\handoutpagebreak}{}
+\newcommand{\graphlabel}[2]{#2}
+\newcommand{\handoutfill}{\vfill}
+\newcommand{\handoutitemsep}{\itemsep=\fill}
+</macros>
+
+<latex-image-preamble>
+\usepackage{tikz}
+\usepackage{tkz-graph}
+\usepackage{tkz-euclide}
+\usetikzlibrary{patterns}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix,arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usetikzlibrary{through,intersections,decorations,shadows,fadings}
+
+\usepackage{pgfplots}
+
+</latex-image-preamble>
+
+</docinfo>
+
+
+<book>
+<title>\Huge  MA 151: Applied Calculus</title>
+<frontmatter>
+<titlepage>
+<author>
+<personname>Dr.\ W. Ethan Duckworth</personname>
+</author>
+</titlepage>
+</frontmatter>
+
+
+<xi:include href="./chapter1.ptx" />
+
+<xi:include href="./chapter2.ptx" />
+
+<xi:include href="./chapter3.ptx" />
+
+<xi:include href="./chapter4.ptx" />
+
+<xi:include href="./chapter5.ptx" />
+
+<xi:include href="./chapter6.ptx" />
+
+<backmatter>
+
+<xi:include href="./bibliography.ptx" />
+
+</backmatter>
+</book>
+</mathbook>

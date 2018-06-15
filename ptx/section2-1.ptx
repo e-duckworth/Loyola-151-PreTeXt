@@ -1,0 +1,388 @@
+
+
+<section>
+  <title>What is a Function?</title>
+  <example>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            <m>f(x) = x^2</m>, then <m>f(5) = ?</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>g(t) = \sqrt{t^2 + 1}</m>,
+            <m>g(0) = ?</m>, <m>g(-3) = ?</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>f(t+1) = ?</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>g(x + h) = ?</m>
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              In the formula <q> <m>f(x)=x^2</m> </q>
+              we simply replace each <q><m>x</m></q>
+              with <m>5</m> to get
+              <me>
+                f(5) = 5^2
+              </me>
+              Maybe that's the best place to stop,
+              because this problem isn't really
+              about calculating <m>5^2</m> it's about how we combine <m>x^2</m> and <m>5</m>, which
+              we've done.
+              But I know the curiosity is killing you, so we can go to
+              the next step and say:
+              <me>
+                f(5) = 5^2 = 25
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              With a little practice,
+        you should be able to find <m>g(0)</m> in
+              your head, but for now,
+        let's write out every step:
+              <md>
+                <mrow>g(0) \amp  = \sqrt{0^2 + 1}</mrow>
+                <mrow>\amp  = \sqrt{1}</mrow>
+                <mrow>\amp  = 1</mrow>
+              </md>
+              For <m>g(-3)</m> the only real difference is that you should be careful
+              about order of operations with the negative <m>3</m>.
+              Note that whatever
+              we plug in for <m>t</m> should be squared, including the negative:
+              <md>
+                <mrow>g(-3) \amp  = \sqrt{(-3)^2 + 1}</mrow>
+                <mrow>\amp  = \sqrt{9+1}</mrow>
+                <mrow>\amp  = \sqrt{10}</mrow>
+              </md>
+              We'll leave the answer in this form,
+              because the point of this example
+              <em>isn't</em> how to find the square root using our calculator.
+              The
+              point is do we know where to put the <m>-3</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For <m>f(t+1)</m> it might help if we first write <m>f</m> without using
+              <m>x</m>.
+              Remember, <q><m>x</m></q>
+              is just a letter we use to stand for
+              something else.
+              If you get too fixated on <m>x</m> you might miss how
+              <m>f</m> is really defined,
+        and therefore how to find <m>f(t+1)</m>.
+              Here's a
+              different way to write <m>f</m>:
+              <me>
+                f() = ()^2
+              </me>
+              Whatever you put into <m>()</m> on the left you should also put into
+              <m>()^2</m> on the right:
+              <me>
+                f(t+1) = (t+1)^2
+              </me>
+              I'll stop there for (c) because the point isn't whether we can FOIL or
+              expand <m>(t+1)^2</m>,
+        the point is did we plug <m>t+1</m> in correctly.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              As in the last part, let's first write <m>g</m> without using the
+              letter <m>t</m>,
+              just using a blank space which we can plug stuff into:
+              <me>
+                g()=\sqrt{()^2+1}
+              </me>
+              Now, we should plug <m>x+h</m> into <m>()</m> on both the left and the
+              right:
+              <me>
+                g(x+h)=\sqrt{(x+h)^2+1}
+              </me>
+              Again, I won't try to expand and rewrite that any,
+        because it's not
+              the point,
+        and because in this problem it doesn't really help.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The historic Senator Theater is the nearest movie theater to Loyola.
+        Their ticket prices for adults (non-students) seeing a 3D movie are
+        <dollar />13.50 for movies after 6 PM, <dollar />11 for a matinee (noon <mdash /> 6 PM),
+        and <dollar />9 for an early bird show (before 11 AM).
+        Write a piecewise
+        function <m>P(t)</m> for the price of the ticket where <m>t</m> is the time of
+        the showing.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Basically we're just taking the given information about pricing and
+        times and arranging it using the notation for piecewise functions.
+        We put the prices first, and then times second. (In general we put
+        formulas first, and the conditions second.) In this case we get
+        <me>
+          P(t) = 
+          \begin{cases}9 \amp  \text{ if } t\lt  11:00\\
+          11 \amp  \text{ if } 12:00 \le t \le 18:00\\
+          13.50 \amp  \text{ if } t> 18:00
+          \end{cases}
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Since July 1, 2016, the Maryland minimum wage is <dollar />8.75 per hour
+        (FYI: it will increase to <dollar />9.25 on July 1, 2017).
+        Suppose someone
+        is able to make time and a half per hour of overtime (over 40
+        hours).
+        If <m>x</m> is the number of hours worked for this week and
+        <m>f(x)</m> is the income function for (gross) income earned that week,
+        answer the following:
+
+        <ol>
+          <li>
+            <p>
+              Make up an integer <m>A</m> such that <m>A\lt 40</m>,
+              and then calculate <m>f(A)=</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Make up an integer <m>B</m> such that <m>B>40</m>,
+              and then calculate <m>f(B)=</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Make up a non-integer <m>C</m> that <m>C\lt 40</m>,
+              and then calculate <m>f(C)=</m>? (For instance,
+        <m>f(10.5)=?</m>)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Make up a non-integer <m>D</m> that <m>D>40</m>,
+              and then calculate <m>f(D)=</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(x) =</m>? in general
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        (e) Time and a half rate is <m>8.75(1.5) = 13.125</m>
+        <me>
+          I(x) = 
+          \begin{cases}8.75 x \amp  \text{ if } x \le 40\\ 
+          8.75\cdot 40 + 13.125(x-40) \amp  \text{ if } x > 40
+          \end{cases}
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        What are the domains of these functions?
+
+        <ol>
+          <li>
+            <p>
+              <m>f(x) = 3x-5</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>g(x) = \sqrt{x+5}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>h(x) = \dfrac{1}{x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>F(t) = \dfrac{\sqrt{5-t}}{t+2}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The domain is the set of all numbers that we can plug into our formula.
+        When I say <q>we can plug in</q>
+        I mean so that the result is defined, or calculate-able.
+        The way we find the domain is to look for the numbers that are not in it,
+        the numbers that make things undefined or un-calculate-able.
+        In other words, we look for the problem spots.
+      </p>
+
+      <p>
+        With algebraic functions like these there are only two possible
+        kinds of problem spots: division by 0, and square roots of negative
+        numbers.
+        These are problems, and so these are not in the domain.
+
+        <ol>
+          <li>
+            <p>
+              For <m>3x-5</m> are there any problem spots?
+              Is there any number I
+              could plug in that would lead to division by <m>0</m> or the square root
+              of a negative number?
+              No.
+              There is no division, and there is no
+              square root here.
+
+              No problem spots means that all numbers are ok.
+              Thus, the domain is
+              all real numbers.
+              We write this in two ways:
+              <me>
+                \begin{array}{ccc}
+                \text{ interval notation }  \amp  \amp  \text{ inequalities } \\
+                (-\infty,\infty)  \amp \amp  \infty \lt  x \lt  \infty
+                \end{array}
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For <m>\sqrt{x+5}</m> are there are problem spots?
+              Is there any
+              number I could plug in that would lead to division by <m>0</m> or the
+              square root of a negative number?
+              No for division, yes for the
+              square root of a negative number.
+              <md>
+                <mrow>\sqrt{x+5} \amp  \text{ needs }</mrow>
+                <mrow>x+5 \amp  \ge 0</mrow>
+                <mrow>x \amp  \ge -5</mrow>
+              </md>
+              Again, these are the numbers that are ok,
+              i.e.<nbsp />that are in the
+              domain.
+
+              As before, we write this in two ways:
+              <me>
+                \begin{array}{ccc}
+                \text{ interval notation }  \amp  \amp  \text{ inequalities } \\
+                (-5,\infty) \amp \amp   x \ge -5
+                \end{array}
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For <m>\frac 1x</m> are there are problem spots?
+              Is there any number
+              I could plug in that would lead to division by <m>0</m> or the square
+              root of a negative number?
+              No for square roots, yes for division.
+              <md>
+                <mrow>\frac 1x \amp  \text{ needs }</mrow>
+                <mrow>x \amp  \ne 0</mrow>
+              </md>
+              Again, these are the numbers that are ok,
+              i.e.<nbsp />that are in the domain. 
+
+              As before, we write this in two ways:
+              <me>
+                \begin{array}{ccc}
+                \text{ interval notation }  \amp  \amp  \text{ inequalities } \\
+                (-\infty,0)\cup (0,\infty) \amp \amp  x \ne 0
+                \end{array}
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For <m>\frac {\sqrt{5-t}}{t+2}</m> are there are problem spots?
+              Is
+              there any number I could plug in that would lead to division by <m>0</m>
+              or the square root of a negative number?
+              Yes for both!
+              <md>
+                <mrow>\sqrt{5-t} \amp  \text{ needs }</mrow>
+                <mrow>5-t  \amp  \ge 0</mrow>
+                <mrow>5 \amp  \ge t</mrow>
+                <mrow>t \amp  \le 5</mrow>
+                <mrow>\frac{\text{ something } }{t+2} \amp  \text{ needs }</mrow>
+                <mrow>t+2 \amp  \ne 0</mrow>
+                <mrow>t \amp  \ne -2</mrow>
+              </md>
+              Again, these are the numbers that are ok,
+              i.e.<nbsp />that are in the domain. 
+
+              We need both of these conditions to be true:
+              <m>t\le 5</m> and <m>t\ne -2</m>.
+              This is a good way to write the answer,
+              but if we want to make it look
+              like the other answers,
+        then we can write this in two ways:
+              <me>
+                \begin{array}{ccc}
+                \text{ interval notation }  \amp  \amp  \text{ inequalities } \\
+                (-\infty,-2)\cup (-2,5) \amp   \amp  t \lt -2 \text{ or } -2 \lt  t \le 5
+                \end{array}
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

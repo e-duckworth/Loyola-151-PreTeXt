@@ -1,0 +1,196 @@
+
+
+<section>
+  <title>The Definite Integral</title>
+  <example>
+    <statement>
+      <p>
+        Using the graph of <m>f(t)</m> below,
+        draw rectangles representing each
+        of the following Riemann sums for the function <m>f(t)</m> on the
+        interval <m>0 \le t \le 8</m> (or <m>t \in [0, 8]</m>).
+        Calculate the value
+        of each sum.
+
+        <ol>
+          <li>
+            <p>
+              Left-hand sum with <m>\Delta t =4</m> (<m>n = ?</m>)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Right-hand sum with <m>\Delta t = 4</m> (<m>n = ?</m>)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Left-hand sum with <m>\Delta t =2</m> (<m>n = ?</m>)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Right-hand sum with <m>\Delta t = 2</m> (<m>n = ?</m>)
+            </p>
+          </li>
+        </ol>
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale = 1]
+        \draw[step=1cm,gray,ultra thin] (-1.2,-1.2) grid (8.2,8.2);
+        \draw[<->] (-2.2,0) -- (8.2,0);
+        \draw[<->] (0,-1.2) -- (0,8.2);
+        \draw (8.2, 0) node[right] {\(t\)};
+        \draw (7.5, 5.5) node {\(y = f(t)\)};
+        \foreach\y in {-1, 1,2, 4, 3, 5, 6, 7, 8}  \draw(0,\y) -- (0,\y) 
+        node[left]{\color{black!70!black} \(\y\)};
+        \foreach\x in { -1, 1,2, 3, 4, 5,6,7,8} \draw(\x,0) -- (\x,0) 
+        node[below]{\color{black!70!black} \(\x\)};
+        \draw[domain=0:8, samples=100, ultra thick, blue] plot(\x, {1+8*((sin(3.1416*\x/24 r))^2)});\end{tikzpicture}]]></latex-image>
+      </image>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Since <m>\Delta t = 4</m>,
+        and the total interval has length <m>8</m>,
+              this means we divided it into two pieces.
+              Therefore, we'll draw two
+              rectangles,
+              one from <m>0</m> to <m>4</m> and the other from <m>4</m> to <m>8</m>.
+              Each
+              rectangle gets its height from the left edge.
+              So the first one will
+              get its height from the point on the curve where <m>x=0</m>, and the
+              second one will get its height from the point on the curve where
+              <m>x=4</m>.
+              The picture looks like this
+              <image>
+                <latex-image><![CDATA[\begin{tikzpicture}[scale = 0.5]
+                \draw[step=1cm,gray,ultra thin] (-1.2,-1.2) grid (8.2,8.2);
+                \draw[<->] (-2.2,0) -- (8.2,0);
+                \draw[<->] (0,-1.2) -- (0,8.2);
+                \foreach\y in {-1, 1,2, 4, 3, 5, 6, 7, 8}  \draw(0,\y) node[left]{ \(\y\)};
+                \foreach\x in { -1, 1,2, 3, 4, 5,6,7,8} \draw(\x,0) node[below]{ \(\x\)};
+                \draw[domain=0:8, samples=100,
+              ultra thick, blue] plot(\x, {1+8*((sin(3.1416*\x/24 r))^2)});
+                \begin{scope}[very thick,green!50!black]
+                \draw (0,0) -- ++ (4,0) -- ++ (0,1) -- ++ (-4,0) -- cycle;
+                \draw (4,0) -- ++ (4,0) -- ++ (0,3) -- ++ (-4,0) -- cycle;
+                \end{scope}\end{tikzpicture}]]></latex-image>
+              </image>
+              and we get
+              <md>
+                <mrow>\text{ Riemann Sum }  \amp  = \text{ sum of areas of two rectangles }</mrow>
+                <mrow>\amp  = f(0)\cdot \Delta t + f(4)\cdot \Delta t</mrow>
+                <mrow>\amp  = 1\cdot 4 + 3 \dot 4</mrow>
+                <mrow>\amp  = 4+12</mrow>
+                <mrow>\amp  = 16</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We'll be briefer this time:
+              <m>\Delta t = 4</m>, <m>n=2</m>, each
+              rectangle gets its height from the right edge, the first one uses
+              <m>x=4</m> and the second one uses <m>x=8</m>:
+              <image>
+                <latex-image><![CDATA[\begin{tikzpicture}[scale = 0.5]
+                \draw[step=1cm,gray,ultra thin] (-1.2,-1.2) grid (8.2,8.2);
+                \draw[<->] (-2.2,0) -- (8.2,0);
+                \draw[<->] (0,-1.2) -- (0,8.2);
+                \foreach\y in {-1, 1,2, 4, 3, 5, 6, 7, 8}  \draw(0,\y) node[left]{ \(\y\)};
+                \foreach\x in { -1, 1,2, 3, 4, 5,6,7,8} \draw(\x,0) node[below]{ \(\x\)};
+                \draw[domain=0:8, samples=100,
+              ultra thick, blue] plot(\x, {1+8*((sin(3.1416*\x/24 r))^2)});
+                \begin{scope}[very thick,red!50!black]
+                \draw (0,0) -- ++ (4,0) -- ++ (0,3) -- ++ (-4,0) -- cycle;
+                \draw (4,0) -- ++ (4,0) -- ++ (0,7) -- ++ (-4,0) -- cycle;
+                \end{scope}\end{tikzpicture}]]></latex-image>
+              </image>
+              and we get
+              <md>
+                <mrow>\text{ Riemann Sum }  \amp  = \text{ sum of areas of two rectangles }</mrow>
+                <mrow>\amp  = f(4)\cdot \Delta t + f(8)\cdot \Delta t</mrow>
+                <mrow>\amp  = 3\cdot 4 + 7 \cdot 4</mrow>
+                <mrow>\amp  = 12+28</mrow>
+                <mrow>\amp  = 40</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\Delta t = 2</m>, <m>n=4</m>,
+              heights from the left edge, use <m>x=0</m>,
+              <m>2</m>, <m>4</m>, <m>6</m>:
+              <image>
+                <latex-image><![CDATA[\begin{tikzpicture}[scale = 0.5]
+                \draw[step=1cm,gray,ultra thin] (-1.2,-1.2) grid (8.2,8.2);
+                \draw[<->] (-2.2,0) -- (8.2,0);
+                \draw[<->] (0,-1.2) -- (0,8.2);
+                \foreach\y in {-1, 1,2, 4, 3, 5, 6, 7, 8}  \draw(0,\y) node[left]{ \(\y\)};
+                \foreach\x in { -1, 1,2, 3, 4, 5,6,7,8} \draw(\x,0) node[below]{ \(\x\)};
+                \draw[domain=0:8, samples=100,
+              ultra thick, blue] plot(\x, {1+8*((sin(3.1416*\x/24 r))^2)});
+                \begin{scope}[very thick,red!50!black]
+                \draw (0,0) -- ++ (2,0) -- ++ (0,1) -- ++ (-2,0) -- cycle;
+                \draw (2,0) -- ++ (2,0) -- ++ (0,1.5) -- ++ (-2,0) -- cycle;
+                \draw (4,0) -- ++ (2,0) -- ++ (0,3) -- ++ (-2,0) -- cycle;
+                \draw (6,0) -- ++ (2,0) -- ++ (0,5) -- ++ (-2,0) -- cycle;
+                \end{scope}\end{tikzpicture}]]></latex-image>
+              </image>
+              and we get
+              <md>
+                <mrow>\text{ Riemann Sum }  \amp  = \text{ sum of areas of four rectangles }</mrow>
+                <mrow>\amp  = f(0)\cdot \Delta t + f(2)\cdot \Delta t + f(4) \cdot \Delta t + f(6) \cdot \Delta t</mrow>
+                <mrow>\amp  = 1\cdot 2 + 1.5 \cdot 2 + 3\cdot 2 + 5 \cdot 2
+                \amp  = 2+3+6+10</mrow>
+                <mrow>\amp  = 21</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\Delta t = 2</m>, <m>n=4</m>,
+              heights from the right edge,
+              use <m>x=2</m>, <m>4</m>, <m>6</m>, <m>8</m>:
+              <image>
+                <latex-image><![CDATA[\begin{tikzpicture}[scale = 0.5]
+                \draw[step=1cm,gray,ultra thin] (-1.2,-1.2) grid (8.2,8.2);
+                \draw[<->] (-2.2,0) -- (8.2,0);
+                \draw[<->] (0,-1.2) -- (0,8.2);
+                \foreach\y in {-1, 1,2, 4, 3, 5, 6, 7, 8}  \draw(0,\y) node[left]{ \(\y\)};
+                \foreach\x in { -1, 1,2, 3, 4, 5,6,7,8} \draw(\x,0) node[below]{ \(\x\)};
+                \draw[domain=0:8, samples=100,
+              ultra thick, blue] plot(\x, {1+8*((sin(3.1416*\x/24 r))^2)});
+                \begin{scope}[very thick,red!50!black]
+                \draw (0,0) -- ++ (2,0) -- ++ (0,1.5) -- ++ (-2,0) -- cycle;
+                \draw (2,0) -- ++ (2,0) -- ++ (0,3) -- ++ (-2,0) -- cycle;
+                \draw (4,0) -- ++ (2,0) -- ++ (0,5) -- ++ (-2,0) -- cycle;
+                \draw (6,0) -- ++ (2,0) -- ++ (0,7) -- ++ (-2,0) -- cycle;
+                \end{scope}\end{tikzpicture}]]></latex-image>
+              </image>
+              and we get
+              <md>
+                <mrow>\text{ Riemann Sum }  \amp  = \text{ sum of areas of four rectangles }</mrow>
+                <mrow>\amp  = f(2)\cdot \Delta t + f(4) \cdot \Delta t + f(6) \cdot \Delta t+f(8)\cdot \Delta t</mrow>
+                <mrow>\amp  = 1.5 \cdot 2 + 3\cdot 2 + 5 \cdot 2 + 7\cdot 2</mrow>
+                <mrow>\amp  = 33</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

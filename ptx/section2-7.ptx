@@ -1,0 +1,174 @@
+
+
+<section>
+  <title>Exponential Growth and Decay</title>
+  <example>
+    <title>Problem 14*</title>
+    <statement>
+      <p>
+        A population, currently 200,
+        is growing at 5<percent /> per year.
+
+        <ol>
+          <li>
+            <p>
+              Write a formula for the population, <m>P</m>,
+              as a function of time,
+        <m>t</m>, years in the future.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Graph <m>P</m> against <m>t</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Estimate the population 10 years from now.
+            </p>
+          </li>
+
+          <li>
+            <title>(d*)</title>
+            <p>
+              Find the doubling time of the population algebraically.
+            </p>
+          </li>
+
+          <li>
+            <title>(e*)</title>
+            <p>
+              Model the same population using a continuous growth rate,
+              compare the graph of this model with the graph from part (b).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>P = 200(1.05)^t</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <image width="56%" source="images/" />
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>P(10) \amp  = 200(1.05)^{10}</mrow>
+                <mrow>\amp  \approx 325.7789</mrow>
+                <mrow>\amp  \text{ about } 326</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We solve for when <m>P=400</m>:
+              <md>
+                <mrow>400 \amp  = 200(1.05)^t</mrow>
+                <mrow>2 \amp  = 1.05^t</mrow>
+                <mrow>t \amp  = \ln(2)/\ln(1.05)</mrow>
+                <mrow>\amp  \approx 14.2067</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              They are asking to change this model to the natural exponential
+              (base <m>e</m>, or <m>Pe^{kt}</m> model.
+              What is the <m>k</m> in this instance?
+              <md>
+                <mrow>200(1.05)^t \amp  = 200e^{kt}</mrow>
+                <intertext>We can use <m>t = 1</m>(or any value of <m>t</m> but <m>t=1</m> is easiest)</intertext>
+                <mrow>1.05 \amp  = e^{k}</mrow>
+                <mrow>\ln(1.05) \amp  = k \ln(e) = k</mrow>
+                <mrow>k \amp  \approx 0.04879</mrow>
+              </md>
+              Thus the continuous growth rate is about <m>4.879\%</m> for an annual
+              growth rate of 5<percent />.
+
+              We show below the original function,
+              <m>P_1</m>, plotted together with
+              the function <m>P_2 = e^{0.04879t}</m>,
+              marked with a few little stars,
+              <m>\color{green!75!black}\star</m>.
+              As you can see, the original
+              function and the new one look identical:
+              <image width="56%" source="images/" />
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Find the future value in 8 years of a <dollar />7,000 payment today, if
+            the interest rate is 3.5<percent /> compounded continuously.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the present value of a <dollar />7,000 payment that will be made 8
+            years from now if the interest rate is 3.5<percent /> compounded
+            continuously.
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              We'll use the equation
+              <me>
+                FV = PV e^{rt}
+              </me>
+              where <m>PV = 7000</m>,
+        <m>r = 0.035</m>, and <m>t = 8</m>:
+              <me>
+                FV = 7000e^{0.035(8)} \approx \dollar9261.91
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We'll use the equation
+              <me>
+                FV = PV e^{rt}
+              </me>
+              where <m>FV = 7000</m>,
+        <m>r = 0.035</m>, and <m>t = 8</m>:
+              <md>
+                <mrow>7000 \amp = PVe^{.035(8)}</mrow>
+                <mrow>PV \amp = \frac{7000}{e^{.035(8)}}</mrow>
+                <mrow>\amp  = 7000e^{-0.035(8)}</mrow>
+                <mrow>\amp  \approx \dollar5290.49</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

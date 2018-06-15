@@ -1,0 +1,217 @@
+
+
+<section>
+  <title>Distance and Accumulated Change</title>
+  <example>
+    <statement>
+      <p>
+        The odometer on our car is broken,
+        but we really need an estimate of how far we're driving.
+        The speedometer readings are shown below;
+        use them to estimate the distance traveled over the first 30 minutes.
+        Find a lower estimate and an upper estimate.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Time (min)</cell>
+          <cell>0</cell>
+          <cell>10</cell>
+          <cell>20</cell>
+          <cell>30</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Velocity (mi/h)</cell>
+          <cell>17</cell>
+          <cell>32</cell>
+          <cell>35</cell>
+          <cell>37</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </statement>
+    <solution>
+      <p>
+        To find the lower estimate, we look at each 10 minute interval, and
+        choose the lowest velocity that we see.
+        For example, from <m>t=0</m> to
+        <m>t=10</m> the lowest velocity is <m>17</m> mi/h.
+        Note that there's one last
+        trick here: we need to convert units.
+        A 10 minute interval is 10/60
+        of an hour, so,
+        from <m>t=0</m> to <m>t=10</m>, our lower estimate for
+        distance traveled would be <m>17\cdot 10/60</m>.
+        In a similar way, we
+        get the following numbers in each interval:
+        <md>
+          <mrow>\text{ lower estimate: } \  \amp  = 17\cdot 10/60 + 32\cdot 10/60 + 35\cdot 10/60</mrow>
+          <mrow>\amp  = (170+320+350)/60</mrow>
+          <mrow>\amp  = (490+350=840)/60</mrow>
+          <mrow>\amp  = 14</mrow>
+        </md>
+      </p>
+
+      <p>
+        To get our upper estimate, we repeat most of the above steps, but in
+        each 10 minute interval we use the highest velocity that we see.
+        We
+        get the following numbers in each interval:
+        <md>
+          <mrow>\text{ upper estimate: }  \ \amp  =32\cdot 10/60 + 35\cdot 10/60 + 37\cdot 10/60</mrow>
+          <mrow>\amp   = (320+350+370)/60</mrow>
+          <mrow>\amp  = (670+370)/60</mrow>
+          <mrow>\amp  =1040/60</mrow>
+          <mrow>\amp  \approx 17.333</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The figure below shows the velocity,
+        <m>v</m>, of an object (in meters/sec).
+        Estimate the total distance the object traveled between <m>t=0</m> and <m>t=6</m>. <image width="56%" source="images/" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let's start by focusing on the main idea here:
+        area below this curve = total distance traveled.
+        So, what we are <em>really</em>
+        going to find is the area under the curve.
+        We haven't been told to use a particular method to estimate this area,
+        so we'll decide on our own how to go,
+        and we'll split it up into rectangles and triangles, as shown
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[yscale=0.1,xscale=1]
+        \draw[xstep = 1cm, ystep=10cm, gray, very thin] (0,0) grid (6,40);
+        \draw[cyan,very thick,domain=0:6,samples=100] plot[smooth] (\x,{sqrt(\x)*15}); 
+        \foreach \x in {1,2,...,6} \xtickmark{\x}; 
+        \foreach \y in {10,20,...,40} \ytickmark{\y};
+        \begin{scope}[ultra thick]
+        \draw (0,0) node[above right=8pt]{\(A_1\)} -- ++ (1,0) -- ++ (0,15) -- (0,0) ;
+        \draw (1,0) node[above right=8pt]{\(A_2\)} -- ++ (1,0) -- ++ (0,15) -- ++ (-1,0) -- cycle ;
+        \draw (1,15)node[above =20pt,right=5pt]{\(A_3\)}  -- ++ (1,0) -- ++ (0,6) -- cycle;
+        \draw (2,0) node[above right=8pt]{\(A_4\)}  -- ++ (1,0) -- ++ (0,21) -- ++ (-1,0) -- cycle;
+        \draw (2,21) node[above right=8pt]{\(A_5\)}  -- ++ (1,0) -- ++ (0,5)  -- cycle;
+        \draw (3,0) node[above right=8pt]{\(A_6\)}  -- ++ (1,0) -- ++ (0,26)  -- ++ (-1,0) -- cycle;
+        \draw (3,26) node[above right=8pt]{\(A_7\)}  -- ++ (1,0) -- ++ (0,4)  -- cycle;
+        \draw (4,0) node[above right=8pt]{\(A_8\)}  -- ++ (1,0) -- ++ (0,30)  -- ++ (-1,0) -- cycle;
+        \draw (4,30) node[above right=8pt]{\(A_9\)}  -- ++ (1,0) -- ++ (0,3.5)  -- cycle;
+        \draw (5,0) node[above right=8pt]{\(A_{10}\)}  -- ++ (1,0) -- ++ (0,33.5)  -- ++ (-1,0) -- cycle;
+        \draw (5,33.5) node[above right=8pt]{\(A_{11}\)}  -- ++ (1,0) -- ++ (0,3.5)  -- cycle;
+        \end{scope}\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        Now we simply estimate the heights of each rectangle and triangle
+        using the numbers on the grid,
+        and guessing when it's between two
+        numbers.
+        I won't spend time worring about exactly how well you read
+        the graph, but here are the numbers I found:
+        <md>
+          <mrow>\text{ area }  \amp  = \foreach \i in {1,...,10} {A_{\i} +} A_{11}</mrow>
+          <mrow>\amp  = \frac 12 (1)(13) + 13 + \frac 72 + 20 + \frac 52 + 25 + \frac 52 + 30 + 2 + 34 +2</mrow>
+          <mrow>\amp  \approx 141</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The velocity of a vehicle on a track is given by <m>v(t) = \unitfrac[9t]{m}{s}</m>.
+        Find the exact distance traveled by this vehicle from <m>t = 2</m> to <m>t = 10</m> seconds.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The main idea here is to turn this back into area:
+        <md>
+          <mrow>\text{ distance }  \amp  = \text{ changing velocity } \times \text{ time }</mrow>
+          <mrow>\amp  = \text{ changing height of \(9t\) graph }  \times \text{ width along graph }</mrow>
+          <mrow>\amp  = \text{ area under ``curve'' }</mrow>
+        </md>
+      </p>
+
+      <p>
+        So, let's draw this graph,
+        and then calculate the distance under it (more precisely,
+        between the graph and the horizontal axis,
+        and between <m>t=2</m> and <m>t=10</m>)
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[yscale=0.05,xscale=0.35]
+        \draw[->,thick] (0,0) -- (12,0);
+        \draw[->,thick] (0,0) -- (0,92);
+        \draw[dashed] (0,0) -- (2,18);
+        \draw (2,18) -- node[midway,above left]{\(y=v(t)\)} (10,90)--++(1,9);
+        \foreach\x in {2,10} \xtickmark{\x};
+        \foreach\y in {18,90} \ytickmark{\y};
+        \draw[fill=gray!20!white] (2,0) -- ++ (8,0) -- ++ (0,90) -- (2,18) -- cycle;\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        Maybe you know the area formula for a trapezoid, but if not,
+        it's easy to break this shape up into a rectangle and a triangle:
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[yscale=0.05,xscale=0.35]
+        \draw[->,thick] (0,0) -- (12,0);
+        \draw[->,thick] (0,0) -- (0,92);
+        \draw[dashed] (0,0) -- (2,18);
+        \draw (2,18) -- node[midway,above left]{\(y=v(t)\)} (10,90);
+        \foreach\x in {2,10} \xtickmark{\x};
+        \foreach\y in {18,90} \ytickmark{\y};
+        \begin{scope}[thick,blue]
+        \draw (2,0) node[above right]{\(A_1\)} -- ++ (8,0) -- ++ (0,18) -- ++ (-8,0) -- cycle;
+        \draw (2,18) node[above right=15pt]{\(A_2\)} -- ++ (8,0) -- ++ (0,72) -- cycle;
+        \end{scope}
+        \begin{scope}[red]
+        \draw[decorate,decoration={brace,amplitude=10pt,raise=5pt,mirror}]
+        (2,0) 
+        -- node[midway,below=14pt]{\(8\)} (10,0);
+        \draw[decorate,decoration={brace,amplitude=5pt,raise=5pt,mirror}]
+        (10,0) 
+        -- node[midway,right=12pt]{\(18\)}(10,18);
+        \draw[decorate,decoration={brace,amplitude=10pt,raise=5pt,mirror}]
+        (10,18) 
+        -- node[midway,right=12pt]{\(72\)}(10,90);
+        \end{scope}\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        Now we can finish our calculation:
+        <md>
+          <mrow>\text{ distance }  \amp  = \text{ area }</mrow>
+          <mrow>\amp  = A_1 + A_2</mrow>
+          <mrow>\amp  = 8(18) + \frac 12 (8)(72)</mrow>
+          <mrow>\amp  = 432</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+</section>
+

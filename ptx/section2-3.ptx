@@ -1,0 +1,156 @@
+
+
+<section>
+  <title>Rates of change</title>
+  <example>
+    <title>Problem 12</title>
+    <statement>
+      <p>
+        Table 1.14 shows world bicycle production (from \url{http://www.earth-policy.org/indicators/C48/}, accessed April 19, 2005.) Table 1.14
+        <em>World bicycle production, in millions</em>
+      </p>
+      <tabular>
+        \hline
+        Year &amp; 1950 &amp; 1960 &amp; 1970 &amp; 1980 &amp; 1990 &amp; 2000 \\ 
+        \hline
+        Bicycles &amp; 11 &amp; 20 &amp; 36 &amp; 62 &amp; 92 &amp; 101 \\
+        \hline
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Find the change in bicycle production between 1950 and 2000.
+            Give units.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the average rate of change in bicycle production between 1950 and 2000.
+            Give units and interpret your answer in terms of bicycle production.
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              We simply subtract the bicycle production during one year from
+              the production during another year:
+              <me>
+                101-11 = 90
+              </me>
+              The units are <q>million bicycles</q>,
+              so the full answer is 90 million
+              bicycles.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The average rate of change is, by definition,
+              <me>
+                \frac{\text{ change in \(y\)-values } }{\text{ change in \(x\)-values } }
+              </me>
+              In this case that means
+              <me>
+                \dfrac{90}{50} = \frac{9}{5} = \frac{18}{10} = \unitfrac[1.8]{Million\ Bicycles}{Year}
+              </me>
+              where the units are million bicycles per year.
+
+              The interpretation is this:
+              from 1950 to 2000, production of bicycles
+              increased on average <m>1.8</m> million bicycles per year.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the average rate of change of
+        <m>f(x) = 4x^2-2</m> between <m>x = -1</m> and <m>x=3</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The average rate of change is, by definition,
+        <me>
+          \frac{\text{ change in \(y\)-values } }{\text{ change in \(x\)-values } }
+        </me>
+      </p>
+
+      <p>
+        In this case that means
+        <md>
+          <mrow>\frac{f(3) - f(-1)}{3 - (-1)} \amp = \frac{4(9) - 2 - (4(1) - 2)}{4}</mrow>
+          <mrow>\amp  = \frac{36 - 2 - 4 + 2}{4}</mrow>
+          <mrow>\amp  = \frac{32}{4}</mrow>
+          <mrow>\amp  = 8</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 46*</title>
+    <statement>
+      <p>
+        Consider two situations: (1) A company has an increase in sales from
+        <dollar />100,000 to <dollar />500,000; (2) A company has an increase in sales from
+        <dollar />20,000,000 to <dollar />20,500,000.
+
+        <ol>
+          <li>
+            <p>
+              Which absolute change is bigger?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Which relative change is bigger?
+              Justify your answer.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              The change is situation (1) is <m>400,000</m> and the change in situation (2) is <m>500,000</m>.
+              Situation (2) is bigger.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The relative change is situation (1) is
+              <md>
+                <mrow>\frac{\Delta y }{y_0} \amp  = \frac{400000}{100000}</mrow>
+                <mrow>\amp  = 400\</mrow>
+              </md>
+              The relative change in situation (2) is
+              <md>
+                <mrow>\frac{\Delta y }{y_0} \amp  = \frac{500000}{20000000}</mrow>
+                <mrow>\amp  = \frac{5}{200}</mrow>
+                <mrow>\amp  = \frac{1}{40}</mrow>
+                <mrow>\amp  = 2.5\</mrow>
+              </md>
+              The relative change in situation (1) is bigger.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

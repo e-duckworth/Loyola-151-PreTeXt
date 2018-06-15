@@ -1,0 +1,296 @@
+
+
+<section>
+  <title>Elasticity of Demand</title>
+  <definition>
+    <statement>
+      <p>
+        {4.6 Formulas for Elasticity}
+        Let <m>q</m> be the quantity of some product demanded (bought) when the
+        price is <m>p</m> (so <m>q</m> is a function of <m>p</m>).
+        \begin{itemize}
+        \item
+        <me>
+          E = \left| \sfrac{p}{q}\cdot \deriv qp\right|
+        </me>
+      </p>
+
+      <p>
+        \item <m>E</m> approximated by
+        <me>
+          E\approx \left| \frac{\Delta q/q}{\Delta p/p}\right|
+        </me>
+      </p>
+
+      <p>
+        \item <m>E</m> interpreted as:
+        percentage change in demand, compared to
+        percentage change in price.
+        \item predicting percentage change in demand:
+        <me>
+          \sfrac{\Delta q}{q} \approx -E\sfrac{\Delta p}{p}
+        </me>
+      </p>
+
+      <p>
+        \item <m>E>1</m> means <m>E\lt 1</m> means
+      </p>
+    </statement>
+  </definition>
+
+  <example>
+    <statement>
+      <p>
+        The elasticity of the demand for eggs is <m>0.43</m> and the elasticity
+        of fresh tomatoes is <m>2.22</m>.
+        What is the effect on the quantity
+        demanded of both eggs and tomatoes of
+
+        <ol>
+          <li>
+            <p>
+              a <m>10\%</m> increase in price?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              a <m>15\%</m> decrease in price?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <ol>
+        <li>
+          <p>
+            With <m>10\%</m> increase in price, we expect for eggs:
+            <me>
+              \frac{\Delta q}{q} \approx -E\; \frac{\Delta p}{p} = -0.43(0.10) =
+              -0.043
+            </me>
+            For tomatoes:
+            <me>
+              \frac{\Delta q}{q} \approx -E\; \frac{\Delta p}{p} = -2.22(0.10) =
+              -0.222
+            </me>
+            Thus with a <m>10\%</m> increase in price,
+            we can expect about <m>4.3\%</m>
+            decrease in demand for eggs,
+            and about <m>22.2\%</m> decrease in demand
+            for fresh tomatoes.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            With With <m>15\%</m> decrease in price, we expect for eggs:
+            <me>
+              \frac{\Delta q}{q} \approx -E\; \frac{\Delta p}{p} = -0.43(-0.15)
+              = 0.0645
+            </me>
+            For tomatoes:
+            <me>
+              \frac{\Delta q}{q} \approx -E\; \frac{\Delta p}{p} = -2.22(-0.15)
+              = 0.333
+            </me>
+            Thus with a <m>15\%</m> decrease in price,
+            we can expect about <m>6.45\%</m>
+            increase in demand for eggs,
+            and about <m>33.3\%</m> increase in demand
+            for fresh tomatoes.
+          </p>
+        </li>
+      </ol>
+
+      <p>
+        By comparing the effect change in prices are on eggs (<m>E \lt 1</m>) and tomatoes (<m>E > 1</m>),
+        we can see how eggs have <em>inelastic demand</em>
+        while fresh tomatoes have <em>elastic demand</em>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        In Fall 2013, the undergraduate enrollment at Loyola University
+        Maryland was <m>3875</m> and the tuition was <m>\dollar41850</m> per year
+        (information taken from the 2013<ndash />2014 Loyola Catalogue).
+        The
+        elasticity of demand for a 4 year college is <m>0.10</m> (according to
+        \url{http://centerforcollegeaffordability.org/archives/1336}).
+
+        <ol>
+          <li>
+            <p>
+              Will a <m>5\%</m> increase in tuition cause total revenue to go up or go down?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Can you find a way to predict this answer without repeating all the calculations?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Since the elasticity is <m>0.10</m>,
+              a <m>5\%</m> increase in tuition
+              should cause a <m>0.1(0.05)</m> decrease in attendance.
+              Thus, the
+              attendance is predicted to be
+              <me>
+                3875(1 - 0.005) \approx 3856
+              </me>.
+              Compare old and new revenues:
+              <md>
+                <mrow>R \amp = pq</mrow>
+                <mrow>\text{ old: } R_1 \amp  = (41850)(3875) = \dollar162,168,750</mrow>
+                <mrow>\text{ new: } R_2 \amp  = (41850*1.05)(3856) = \dollar169,442,280</mrow>
+              </md>
+              So the revenue increase in tuition would cause total revenue to go
+              up (by <m>\dollar7,273,530</m>)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We can realize percent change in <m>R = pq</m>:
+              <md>
+                <mrow>\%\text{ change in } R 
+                \amp  = \frac{\Delta R}{R}</mrow>
+                <mrow>\amp  = \frac{ (\Delta p)q + p(\Delta q)}{p\cdot q}</mrow>
+                <mrow>\amp  = \frac{ (\Delta p)q}{p\cdot q} + \frac{p(\Delta q)}{p\cdot q}</mrow>
+                <mrow>\amp  = \frac{\Delta p}{q} + \frac{\Delta q}{q}</mrow>
+                <mrow>\amp  = \frac{\Delta p}{p} - E\frac{\Delta p}{p}</mrow>
+                <mrow>\amp  = (1-E)\frac{\Delta p}{p}</mrow>
+                <mrow>\amp  = (1-E)(\% \text{ change in } p)</mrow>
+              </md>
+              So for this problem, we have <m>E = 0.1</m> and percent change in price
+              is <m>0.05</m>:
+              <me>
+                \%\text{ change in } R = (0.9)(0.05) = 0.045
+              </me>
+              Thus we can expect revenue to increase by about <m>4.5\%</m>.
+
+              From part (a),
+              <m>\dfrac{7,273,530}{162,168,750} \approx 0.04485</m> or
+              about <m>4.49\%</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <paragraphs>
+    <title>Test</title>
+    <p>
+      {4.6 Critical Points in Elasticity}
+      In general,
+      the elasticity determines whether <m>R</m> is an increasing
+      function of <m>p</m> or not:
+      <me>
+        \begin{aligned}\text{ If }  E \amp  \lt  1 \text{ then increasing \(p\) will increase \(R\) } \\
+        \text{ If }  E \amp  > 1 \text{ then increasing \(p\) will decrease \(R\) } \\
+        \text{ If }  E \amp  = 1 \text{ then \(R\) is at a critical point. } 
+        \end{aligned}
+      </me>
+    </p>
+  </paragraphs>
+  <example>
+    <statement>
+      <p>
+        The demand function of Loyola T-shirts is <m>q = 1500 - 125p</m>.
+
+        <ol>
+          <li>
+            <p>
+              Find <m>R</m> when <m>p = \dollar5</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find <m>E</m> when <m>p = \dollar5</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              When <m>p = \dollar5</m>,
+              find out if <m>R</m> is increasing or decreasing (i.e. will increasing <m>p</m> make <m>R</m> increase or decrease?).
+              Do the problem in two different ways:
+              by using the Elasticity,
+              and by finding <m>R</m> as a function of <m>p</m> and using the derivative.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Never forget, revenue equals the the number of things you
+              sell, times how much you sell each one for:
+              <md>
+                <mrow>R \amp  = pq</mrow>
+                <mrow>\amp  =5\BigParens{1500{-}125(5)}</mrow>
+                <mrow>\amp  = 5(875)</mrow>
+                <mrow>\amp  = \dollar4375</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>E \amp  = \abs{ \frac{p}{q}\cdot \deriv{q}{p} }</mrow>
+                <mrow>\amp  = \abs{ \frac{5}{875} (-125) }</mrow>
+                <mrow>\amp  \approx 0.714286</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There's a general rule for how <m>E</m> will tell us about <m>R</m>: If
+              demand for a quantity is inelastic,
+              then revenue will increase
+              with price:
+              <me>
+                E \lt  1 \implies R \nearrow
+              </me>
+              where <q><m>R\nearrow</m></q>
+              means that if <m>p</m> increases, then so does
+              <m>R</m>.
+
+              We should be able to verify this directly using our formula for
+              <m>R</m>: Using <m>R</m> and its derivative:
+              <md>
+                <mrow>R(p)               \amp  = p(1500-125p)</mrow>
+                <mrow>\amp  = 1500p-125p^2</mrow>
+                <mrow>\deriv{R}{p}            \amp  = 1500-250p</mrow>
+                <mrow>\deriv{R}{p}\eval_{p=5} \amp  = 1500-250(5)</mrow>
+                <mrow>\amp  = 250</mrow>
+              </md>
+              Since the rate of change of <m>R</m> with respect to <m>p</m> is positive,
+              <m>R</m> will increase.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

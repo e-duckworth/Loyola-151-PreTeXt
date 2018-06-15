@@ -1,0 +1,115 @@
+
+
+<section>
+  <title>Interpretations of the Definite Integral</title>
+  <example>
+    <statement>
+      <p>
+        Explain in words what each integral represents and give the units
+
+        <ol>
+          <li>
+            <p>
+              <m>v(t)</m> is velocity in mph and <m>t</m> is time in hours,
+              <me>
+                I = \int_2^5 v(t)\ dt
+              </me>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>a(t)</m> is acceleration in m/s<m>^2</m> and <m>t</m> is in seconds,
+              <me>
+                I = \int_3^4 a(t)\ dt
+              </me>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f(t)</m> is the rate at which water is flowing out of a water main
+              break in liters per seconds,
+              and <m>t</m> is in seconds,
+              <me>
+                I = \int_0^3 f(t)\ dt
+              </me>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              To figure out what <em>any</em>
+              integral is giving you, look at
+              everything after the integral sign:
+              <md>
+                <mrow>v(t) \,dt \amp  \approx v\times \Delta t</mrow>
+                <mrow>\amp  = \text{ velocity }  \times \Delta t</mrow>
+                <mrow>\amp  = \frac{\Delta \text{ position } }{\Delta t} \times \Delta t</mrow>
+                <mrow>\amp  = \Delta \text{ position }</mrow>
+              </md>
+              To state it more completely:
+              this is the net change in position from 2 to 5 hours.  
+
+              To figure out the units,
+        simply multiply the units of the above quantities:
+              <md>
+                <mrow>\text{ units }  \amp  = \text{ units of } v \times \text{ units of } t</mrow>
+                <mrow>\amp  = \frac{\text{ miles } }{\text{ hour } }\times \text{ hours }</mrow>
+                <mrow>\amp  = \text{ miles }</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>a(t) \,dt \amp  \approx a\times \Delta t</mrow>
+                <mrow>\amp  = \text{ acceleration }  \times \Delta t</mrow>
+                <mrow>\amp  = \frac{\Delta \text{ velocity } }{\Delta t} \times \Delta t</mrow>
+                <mrow>\amp  = \Delta \text{ velocity }</mrow>
+              </md>
+              To state it more completely:
+              this is the net change in velocity from 3 to 4 seconds.  
+
+              To figure out the units,
+        simply multiply the units of the above quantities:
+              <md>
+                <mrow>\text{ units }  \amp  = \text{ units of } a \times \text{ units of } t</mrow>
+                <mrow>\amp  = \frac{\text{ meters } }{\text{ second } ^2}\times \text{ seconds }</mrow>
+                <mrow>\amp  = \text{ meters } /\text{ second }</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>f(t) \,dt \amp  \approx f \times \Delta t</mrow>
+                <mrow>\amp  = \text{ rate of water flow }  \times \Delta t</mrow>
+                <mrow>\amp  = \frac{\Delta \text{ volume of water } }{\Delta t} \times \Delta t</mrow>
+                <mrow>\amp  = \Delta \text{ volume of water }</mrow>
+              </md>
+              To state it more completely:
+              this is the net change in velocity from 0 to 3 seconds.  
+
+              To figure out the units,
+        simply multiply the units of the above quantities:
+              <md>
+                <mrow>\text{ units }  \amp  = \text{ units of } f \times \text{ units of } t</mrow>
+                <mrow>\amp  = \frac{\text{ liters } }{\text{ second } }\times \text{ seconds }</mrow>
+                <mrow>\amp  = \text{ liters }</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+
