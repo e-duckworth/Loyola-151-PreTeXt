@@ -1,0 +1,95 @@
+
+
+<section>
+  <title>Natural Logarithm</title>
+  <example>
+    <title>Problem 2</title>
+    <statement>
+      <p>
+        Solve
+        <me>
+          10 = 2^t
+        </me>
+        using natural log.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We can't solve this problem all the way in our heads,
+        but you should be able to make a guess that the solution will be between <m>3</m> and <m>4</m>.
+        Why?
+        We know <m>2^3 = 8</m> and <m>2^4 = 16</m>,
+        so <m>t</m> is somewhere between 3 and 4.
+      </p>
+
+      <p>
+        Here's how we solve it algebraically:
+        <md>
+          <mrow>10 \amp  = 2^t</mrow>
+          <mrow>\ln(10) \amp  = \ln(2^t)</mrow>
+          <mrow>\ln(10) \amp  = t\ln(2)</mrow>
+          <mrow>t \amp  = \frac{\ln(10)}{\ln(2)}</mrow>
+          <mrow>\amp   \approx 3.3219</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Loyola tuition part III</title>
+    <statement>
+      <p>
+        In the school year 2013<ndash />2014,
+        the annual tuition at Loyola University Maryland was <dollar />41,850.
+        Since then it has had an annual growth rate of <m>r=2.47\%</m>.
+        Assuming this growth rate continues,
+        when will the tuition reach <dollar />52,000?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We plug this data into the model
+        <me>
+          P = P_0 (1+r)^t
+        </me>
+        and solve for <m>t</m>:
+        <md>
+          <mrow>52000  \amp  = 41850 (1.0247)^t</mrow>
+          <mrow>\frac{52000}{41850} \amp  = 1.0247^t</mrow>
+          <mrow>\ln(52000/41850) \amp  = \ln \left(1.0247^t\right)</mrow>
+          <mrow>\ln(52000/41850) \amp  = t\ln(1.0247)</mrow>
+          <mrow>t  \amp  = \frac{\ln(52000/41850)}{\ln(1.0247)}</mrow>
+          <mrow>\amp  \approx 8.8997102</mrow>
+        </md>
+      </p>
+
+      <p>
+        So, the actual year should be about <m>2022</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        A city's population starts at 600,000 in 2010 and has a continuous
+        growth rate of 5<percent />.
+        What is the population size in 2017?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We model this city with
+        <me>
+          P = 600 000 (1+0.05)^t
+        </me>
+        and plug in <m>t=7</m>:
+        <md>
+          <mrow>P \amp  \approx 600 000 (1.05)^7</mrow>
+          <mrow>\amp  = 844 260</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+</section>
+

@@ -1,0 +1,192 @@
+
+
+<section>
+  <title>Total Change and the Fundamental Theorem of Calculus</title>
+  <example>
+    <statement>
+      <p>
+        The marginal cost <m>C'(q)</m> of making
+        T-shirts is shown below.
+        Suppose the fixed cost is <dollar />100.
+        <me>
+          \begin{array}{c|c|c|c|c|c|c}
+          \hline
+          q     \amp  0  \amp  20   \amp  40   \amp  60   \amp  80   \amp  100  \\ \hline
+          C'(q) \amp  10 \amp  4.67 \amp  3.95 \amp  3.58 \amp  3.33 \amp  3.15 \\ \hline
+          \end{array}
+        </me>
+        <ol>
+          <li>
+            <p>
+              Estimate the total cost of making 60 T-shirts.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is the total variable cost of making 60 T-shirts?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Estimate the difference in cost between making 60 T-shirts and 100.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>\text{ cost in making 60 T-shirts }  
+                \amp  = C(60)</mrow>
+                <mrow>\amp  = \text{ fixed cost }  + \text{ variable cost }</mrow>
+                <mrow>\amp  = C(0) + \int_0^{60} C'(q)\,dq</mrow>
+              </md>
+              Now we estimate this integral,
+              using both Left Hand Sums and Right
+              Hand Sums.
+              <md>
+                <mrow>\int_0 ^{60}C'(q)\,dq 
+                \amp  \approx 10 (20) + 4.67(20) + 3.95(20)  \qquad (\text{ LHS } )</mrow>
+                <mrow>\amp  = 372.40</mrow>
+                <mrow>\int_0^{60} C'(q)\,dq 
+                \amp  \approx 4.67(20) + 3.95(20) + 3.58(20)  \qquad (\text{ RHS } )</mrow>
+                <mrow>\amp  = 244</mrow>
+              </md>
+              Averaging these gets us
+              <md>
+                <mrow>\int_0^{60} C'(q)\,dq \amp  \approx 308.20</mrow>
+                <mrow>C(60)                 \amp  \approx 100 + 308.20</mrow>
+                <mrow>\amp  = \dollar408.20</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The total variable cost is the part of our previous answer
+              that <em>didn't</em> come from fixed cost.
+              In other words
+              <me>
+                \dollar308.20
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>\text{ Change in cost from 60 to 100 }        \amp  = \int_{60}^{100} C'(q)\,dq</mrow>
+                <mrow>\text{ Left-sum: }   \int_{60}^{100} C'(q)\,dq  \amp  \approx 3.58(20) + 3.33(20)</mrow>
+                <mrow>\amp  = \dollar138.20</mrow>
+                <mrow>\text{ Right-sum: }   \int_{60}^{100} C'(q)\,dq \amp  \approx 3.33(20) + 3.15(20)</mrow>
+                <mrow>\amp  = \dollar 129.6</mrow>
+                <mrow>\text{ average: }  \int_{60}^{100} C'(q)\,dq    \amp  \approx \dollar133.90</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        A cup of coffee is put into a <m>\unit[70]{^\circ F}</m> room when
+        <m>t = 0</m>.
+        The temperature (in<nbsp /><m>\unit{^\circ F}</m>) of the coffee <m>t</m>
+        minutes after being in the room is given by
+        <me>
+          H(t) = 110e^{-0.1672t} + 70
+        </me>.
+        <ol>
+          <li>
+            <p>
+              Find <m>H'(t)</m> and explain in words what this represents.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is <m>H(0)</m> and what does it represent?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What does <m>\int_2^4 H'(t)\,dt</m> represent, and what is that value?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              How much does the temperature change in the first 5 minutes in the room?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Do you still remember how to take derivatives?
+              Basically, we
+              need the Chain Rule here for
+              <m>e^{-0.1672t}</m>, so at the right step
+              we will multiply by the derivative of what's on top:
+              <me>
+                H'(t) = 110(-0.1672)e^{-0.1672 t} = -18.392e^{-0.1627t}
+              </me>
+              <m>H'(t)</m> gives the rate the coffee's temperature is changing.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>H(0) = 110 + 70 = 180</m>.
+              This is the temperature of the coffee when it enters the room.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\int_2^4 H'(t)\,dt</m> represents how much the temperature changes
+              between the 2nd and 4th minutes in the room.
+              <md>
+                <mrow>\int_2^4 H'(t)\,dt \amp = H(4) - H(2)</mrow>
+                <mrow>\amp  =   \left(110e^{-0.1672(4)} + 70\right) - \left(110e^{-0.1672(2)} + 70
+                \right)</mrow>
+                <mrow>\amp \approx -22.3789</mrow>
+              </md>
+              So it decreases by about <m>\unit[22.389]{^\circ F}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>\int_0^5 H'(t)\, dt \amp  = H(5) - H(0)</mrow>
+                <mrow>\amp  = 110 e^{-0.1672(5)} + 70 - 180</mrow>
+                <mrow>\amp  \approx -62.3215</mrow>
+              </md>
+              So the temperature of the coffee decreases by about
+              <m>\unit[62]{^\circ F}</m>.
+              The important point here is that you
+              shouldn't wait this long to start drinking your coffee: the best
+              temperature is around 140 degrees and it's cooled too much!
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

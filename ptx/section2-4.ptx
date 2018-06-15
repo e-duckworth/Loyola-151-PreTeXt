@@ -1,0 +1,153 @@
+
+
+<section>
+  <title>Applications of Functions to Economics</title>
+  <example>
+    <title>Problem 20</title>
+    <statement>
+      <p>
+        A company producing jigsaw puzzles has fixed costs of <dollar />6000 and
+        variable costs of <dollar />2 per puzzle.
+        The company sells the puzzles for <dollar />5
+        each.
+
+        <ol>
+          <li>
+            <p>
+              Find formulas for the cost function,
+              the revenue function, and the profit function.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Sketch a graph of <m>R(q)</m> and <m>C(q)</m> on the same axes.
+              What is the break-even point,
+              <m>q_0</m>, for the company?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What is the marginal cost?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>C(q)\amp  = \text{ fixed cost }  + \text{ variable cost } \times
+                \text{ number of puzzles }</mrow>
+                <mrow>\amp  6000 + 2q</mrow>
+                <mrow>R(q) \amp = \text{ sale price } \times \text{ number of puzzles }</mrow>
+                <mrow>\amp  = 5q,</mrow>
+                <mrow>P(q) \amp = \text{ revenue }  - \text{ costs }</mrow>
+                <mrow>\amp  = 5q-(6000 + 2q)</mrow>
+                <mrow>\amp  = 3q-6000</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The graph is shown below
+              <image width="56%" source="images/" />
+              It appears from the graph that the break-even point is about
+              <m>q=2000</m>, and this is easy to verify algebraically:
+              <md>
+                <mrow>C \amp  = R</mrow>
+                <mrow>6000 + 2q \amp  = 5q</mrow>
+                <mrow>6000 \amp  = 3q</mrow>
+                <mrow>q \amp  = 2000  \checkmark</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The marginal cost is <dollar />2 per puzzle,
+              the cost of making one additional puzzle.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 32</title>
+    <statement>
+      <p>
+        The demand curve for a product is given by <m>q=120,000-500p</m> and the
+        supply curve is given by <m>q=1000p</m> for <m>0\le q \le 120,000</m>,
+        where price
+        is in dollars.
+
+        <ol>
+          <li>
+            <p>
+              At a price of <dollar />100,
+              what quantity are consumers willing to buy and what quantity are producers willing to supply?
+              Will the market push prices up or down?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the equilibrium price and quantity.
+              Does your answer to part (a) support the observation that market forces tend to push prices closer to the equilibrium price?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>quantity consumers are willing to buy
+                \amp  = \text{ demand }</mrow>
+                <mrow>\amp  = 120,000 - 500(100)</mrow>
+                <mrow>\amp   = 70,000</mrow>
+                <mrow>quantity producers are willing to make
+                \amp  = \text{ supply }</mrow>
+                <mrow>\amp  = 1000(100)</mrow>
+                <mrow>\amp  = 100,000</mrow>
+              </md>
+              At a price of <dollar />100,
+              the supply is larger than the demand, so some
+              goods remain unsold and we expect the market to push prices down.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>\text{ equilibrium is where supply }  \amp  = \text{ demand }</mrow>
+                <mrow>120 000 - 500 p \amp  = 1000 p</mrow>
+                <mrow>120 000 \amp  = 1500 p</mrow>
+                <mrow>p  \amp  = \frac{1200}{15} = \frac{400}{5} = 80</mrow>
+              </md>
+              The equilibrium price is <m>\dollar80</m>,
+              and the equilibrium quantity is
+              <m>80,000</m>.  
+
+              The market will push prices downward from <dollar />100, toward the
+              equilibrium price of <dollar />80.
+              This agrees with the conclusion to part
+              (a) which says that prices will drop.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

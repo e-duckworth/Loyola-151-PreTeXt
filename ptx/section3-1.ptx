@@ -1,0 +1,419 @@
+
+
+<section>
+  <title>Tangent and Velocity Problems</title>
+  <example>
+    <title>Problem 5</title>
+    <statement>
+      <p>
+        Figure 2.12 shows the cost,
+        <m>y = f(x)</m>, of manufacturing <m>x</m> kilograms of a chemical.
+      </p>
+
+      <p>
+        { Figure 2.12}
+      </p>
+
+      <p>
+        <image width="73%" source="images/" />
+        <ol>
+          <li>
+            <p>
+              Is the average rate of change of the cost greater between <m>x = 0</m> and <m>x = 3</m>,
+              or between <m>x = 3</m> and <m>x = 5</m>?
+              Explain your answer graphically.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Is the instantaneous rate of change of the cost of producing <m>x</m> kilograms greater at <m>x = 1</m> or at <m>x = 4</m>?
+              Explain your answer graphically.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              What are the units of these rates of change?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              In the graph below I've marked, by hand,
+              two line segments on the curve,
+              i.e.<nbsp />two secant lines.
+              One goes from <m>x=0</m> to <m>x=3</m>,
+              and the other goes from <m>x=3</m> to <m>x=5</m> <image width="56%" source="images/" /> To compare the average rates of change,
+              you should look at the slope of each line segment.
+              Since the one from <m>x=0</m> to <m>x=3</m> is steeper,
+              it has a greater slope,
+              and therefore the average rate of change is greater from <m>x=0</m> to <m>x=3</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In the graph below I've marked,
+              by hand, two tangent lines.
+              One is tangent at <m>x=1</m> and the other is tangent at <m>x=4</m>. <image width="56%" source="images/" /> To compare the instantaneous rates of change,
+              you should look at the slope of the tangent lines.
+              Since the one at <m>x=1</m> is steeper, it has a greater slope,
+              and therefore the instantaneous rate of change is greater at <m>x=1</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The units are, as always,
+              <me>
+                \frac{\text{ units of \(y\) } }{\text{ units of \(x\) } }
+              </me>
+              In this case that's
+              <me>
+                \text{ thousands of dollars per kilogram }
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 12</title>
+    <statement>
+      <p>
+        Match the points labeled on the curve in Figure 2.14 with the given slopes.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Slope</cell>
+          <cell>Point</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>-3</m></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>-1</m></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>0</m></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>1/2</m></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>1</m></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>2</m></cell>
+          <cell></cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <p>
+        { Figure 2.14}
+      </p>
+
+      <p>
+        <image width="75%" source="images/" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We'll justify below the following answers:
+        <me>
+          \begin{array}{c|c}\hline
+          \text{ Slope }  \amp   \text{ Point }  \\ \hline
+          -3  \amp  F     \\ \hline
+          -1  \amp  C     \\ \hline
+          0   \amp  E     \\ \hline
+          1/2 \amp  A     \\ \hline
+          1   \amp  B     \\ \hline
+          2   \amp  D     \\ \hline
+          \end{array}
+        </me>
+      </p>
+
+      <p>
+        Let's start by thinking about which point has negative slope:
+        only two points are marked where the graph is going down:
+        <m>C</m> and <m>F</m>.
+        Which one is going down more steeply?
+        You should be able to see that it's <m>F</m>.
+        So, given the choice of two negative slopes in the table,
+        <m>-3</m> and <m>-1</m>,
+        we should choose <m>F</m> to have the slope that's more negative: <m>F \to -3</m>.
+        Then we must have <m>C\to -1</m>.
+      </p>
+
+      <p>
+        Now let's think about which point has <m>0</m> slope:
+        this should be where the tangent line is perfectly horizontal.
+        There's only one point where this happens: <m>E</m>.
+      </p>
+
+      <p>
+        Finally, let's look at three remaining points,
+        where the slope is positive.
+        We can order them by how steep the graph is: It's steepest at <m>D</m>,
+        then next steepest at <m>B</m>,
+        and least steep at <m>A</m>.
+        This means that <m>D\to 2</m>,
+        <m>B\to 1</m>, and <m>A\to 1/2</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Suppose we drop a penny from the roof of a very tall building.
+        Then
+        the distance fallen is given by
+        <me>
+          s(t) = 4.9t^2
+        </me>,
+        where <m>s</m> is measured in meters,
+        and <m>t</m> is the number of seconds
+        since the penny has been dropped.
+
+        <ol>
+          <li>
+            <p>
+              Find the average velocity from <m>t=0</m> to <m>t=7</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Estimate the instantaneous velocity at <m>t=7</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>\text{ average velocity }  \amp  = \frac{\text{ distance traveled } }{\text{ time elapsed } }</mrow>
+                <mrow>\amp  = \frac{s(7) - s(0)} {7-0}</mrow>
+                <mrow>\amp  = \frac{4.9(7^2)-0}{7}</mrow>
+                <mrow>\amp  = \unitfrac[34.3]{m}{s}</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To estimate the instantaneous velocity we find the average velocity over
+              shorter and shorter time intervals around <m>t = 7</m> seconds.
+              In other
+              words, we will calculate this quantity
+              <me>
+                \frac{s(t) - s(7)} {t-7} = \frac{4.9(t^2)-4.9(7^2)}{t-7}
+              </me>
+              for values of <m>t</m> that are close to <m>7</m>.  
+
+              The best way to get a range of values like this is to make a table,
+              either in your calculator, or in a spreadsheet.
+              <me>
+                \begin{array}{c|c}
+                \text{ \(t\)-value (the one not equal to \(7\)) }  \amp  \text{ average velocity from \(t\) to \(7\) }  \\
+                \amp  = \frac{s(t)-s(7)}{t-7}                 \\ \hline
+                6                       \amp  63.7                                    \\
+                6.9                     \amp  68.11                                   \\
+                6.99                    \amp  68.551                                  \\
+                6.999                   \amp  68.595                                  \\
+                7.001                   \amp  68.605                                  \\
+                7.1                     \amp  69.09
+                \end{array}
+              </me>
+              Once we have this information,
+              we should look just around the rows
+              that have <m>t</m> as close to <m>7</m> as possible,
+              in this case, those are the
+              rows with <m>6.999</m> and <m>7.001</m>.
+              In those rows, the velocity is very
+              close to <m>68.6</m>, and so that's our guess:
+              <me>
+                \text{ Instantaneous velocity at \(t=7\) is approximately: } 
+                \unitfrac[68.6]{m}{s}
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Using a calculator or an equivalent app,
+        estimate <m>f'(1)</m> for <m>f(x) = 3x^2</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        By definition we have
+        <me>
+          f'(1) = \lim_{x \to 1}\frac{f(x) - f(1)}{x-1}
+        </me>.
+      </p>
+
+      <p>
+        The way to estimate this is to calculate
+        <m>\frac{f(x)-f(1)}{x-1}</m> for more than one value of <m>x</m>,
+        using values that are close to <m>1</m>.
+      </p>
+
+      <p>
+        The best way to get a range of values like this is to make a table,
+        either in your calculator, or in something like \url{www.desmos.com}:
+        <me>
+          \begin{array}{c|c}
+          \text{ \(x\)-value (the one not equal to \(1\)) }  
+          \amp  \text{ average velocity from \(x\) to \(1\) }                             \\
+          \amp  = \frac{f(x)-f(1)}{x-1}                                            \\ \hline
+          0.5 \amp  4.500  \qquad \rlap{\(\left(=\frac{3(0.5)^2-3(1)^2}{0.5-1}\right)\)} \\
+          0.9   \amp  5.700                                                              \\
+          0.99  \amp  5.970                                                              \\
+          0.999 \amp  5.997                                                              \\
+          1.001 \amp  6.003                                                              \\
+          1.01  \amp  6.030                                                              \\
+          1.1   \amp  6.300                                                              \\
+          1.5   \amp  7.500
+          \end{array}
+        </me>
+      </p>
+
+      <p>
+        Once we have this information,
+        we should look just around the rows
+        that have <m>x</m> as close to <m>1</m> as possible,
+        in this case, those are the
+        rows with <m>0.999</m> and <m>1.001</m>.
+        In those rows, the difference quotient
+        is very close to <m>6</m>, and so that's our guess:
+        <me>
+          f'(1) \approx 6
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 18</title>
+    <statement>
+      <p>
+        Use Figure 2.16 to fill in the blanks in the following statements
+        about the function <m>f</m> at point <m>A</m>.
+
+        <ol>
+          <li>
+            <p>
+              <m>f(\blank) = \blank</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f'(\blank) = \blank</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        { Figure 2.16}
+      </p>
+
+      <p>
+        <image width="56%" source="images/" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              When we write something like
+        <q><m>f(1)=2</m></q> we mean that when
+              <m>x=1</m> we have <m>y=2</m>.
+              Based on the coordinates of point <m>A</m>, we have
+              <me>
+                f(7) = 3
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              When we write something like <m>f'(10) = 11</m> we mean that tangent
+              line at <m>x=10</m> has slope of <m>11</m>.
+              Based on the graph we can figure
+              out <m>f'(7)</m> by calculating the slope of the tangent line.  
+
+              Using the coordinate of the other point on the tangent line, we get
+              the slope of the tangent line is
+              <me>
+                m = \frac{3.8 - 3}{7.2-7} = \frac{0.8}{0.2} = 4
+              </me>
+              so
+              <me>
+                f'(7) = 4
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

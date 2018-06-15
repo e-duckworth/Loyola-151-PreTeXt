@@ -1,0 +1,180 @@
+
+
+<section>
+  <title>Fractions</title>
+  <example>
+    <statement>
+      <ol>
+        \itemsep=\fill
+
+        <li>
+          <p>
+            Add the fractions, and simplify if possible:
+            <m>\frac{5}{14}+\frac{7}{14}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Add the fractions, and simplify if possible:
+            <m>\frac{17}{x} + \frac{3}{x}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Get a common denominator and combine the fractions:
+            <m>\frac{3}{10} + \frac{8}{15}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Get a common denominator and combine the fractions:
+            <m>\frac{3}{7} + \frac{2}{11}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Get a common denominator and combine the fractions:
+            <m>\frac{3}{7} + \frac{x}{11}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Get a common denominator and combine the fractions:
+            <m>\frac{3}{x} + \frac{x}{11}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Multiply the fractions, and simplify if possible:
+            <m>\frac{-5}{3}\cdot \frac{7}{10}</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Multiply the fractions, and simplify if possible:
+            <m>\frac{x}{2}\cdot \frac{x}{7}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Multiply the fractions, and simplify if possible:
+            <m>\frac{3x}{2}\cdot \frac{-13}{5x}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Simplify until you get a single fraction,
+            with no compound fractions:
+            <m>x\left(\frac{1+\sfrac 1x}{x+\sfrac 1x}\right)</m> \handoutfill
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>\frac{5+7}{14} = \frac{12}{14} = \frac{6}{7}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{17+3}{x}= \frac{20}{x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{9}{30} + \frac{16}{30} = \frac{25}{30} = \frac{5}{6}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{33}{77} + \frac{14}{77} = \frac{47}{77}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{33}{77} + \frac{7x}{77} = \frac{33+7x}{77}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{33}{11x}+\frac{x^2}{11x} = \frac{33+x^2}{11x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              There are two ways you can do this.
+              Multiply, then cancel:
+              <me>
+                \frac{-35}{30} = \frac{-35\div 5}{30\div 5} = \frac{-7}{6}
+              </me>
+              or you can cancel, then multiply second:
+              <me>
+                \frac{-\cancel{5}^{\textstyle 1}}{3}\cdot
+                \frac{7}{\cancel{10}_{\textstyle{2}}}
+                =\frac{-1\cdot 7}{3\cdot 2}=\frac{-7}{6}
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\frac{x}{2}\cdot \frac{x}{7} = \frac{x^2}{14}</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              As before, you can multiply then cancel:
+              <me>
+                \frac{3x}{2}\cdot \frac{-13}{5x} = \frac{3x(-13)}{2(5x)} =
+                -\frac{-39\cancel x}{10\cancel x} = -\frac{-39}{10}
+              </me>
+              or you can cancel, then multiply
+              <me>
+                \frac{3\cancel{x}}{2}\cdot \frac{-13}{5\cancel{x}} = \frac{3(-13)}{2(5)} =
+                -\frac{-39}{10}
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              I'll do this one in a fair amount of detail:
+              <me>
+                x\left(\frac{1+\sfrac 1x}{x+\sfrac 1x}\right) = \sfrac{x}{1}
+                \left(\frac{1+\sfrac 1x}{x+\sfrac 1x}\right) = \frac{x\left(1+\sfrac
+                1x\right)}{x+\sfrac 1x} = \frac{x+\sfrac xx}{x+\sfrac{1}{x}} =
+                \frac{x+1}{x+\sfrac 1x}
+              </me>
+              To cancel the last <m>\sfrac 1x</m> we multiply
+              the top and the bottom of this last fraction by <m>x</m> and simplify:
+              <me>
+                \sfrac xx \cdot \frac{x+1}{x+\sfrac 1x} =
+                \frac{x(x+1)}{x\left(x+\sfrac 1x\right)} = \frac{x(x+1)}{x^2+1}
+              </me>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

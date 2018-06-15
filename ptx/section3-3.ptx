@@ -1,0 +1,378 @@
+
+
+<section>
+  <title>Variations on the derivative</title>
+  <example>
+    <title>Problems 2 and 4</title>
+    <statement>
+      <p>
+        Write the Leibniz notation for the derivative of the given function
+        and include units.
+
+        <ol>
+          <li>
+            <title>\#2.</title>
+            <p>
+              The cost, <m>C</m>, of a steak, in dollars,
+              is a function of the weight,
+              <m>W</m>, of the steak, in pounds.
+            </p>
+          </li>
+
+          <li>
+            <title>\#4.</title>
+            <p>
+              An employee's pay, <m>P</m>, in dollars,
+              for a week is a function of the number of hours worked,
+              <m>H</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <title>\#2.</title>
+            <p>
+              Since <m>C</m> is a function of <m>W</m>, we write <m>C = f(W)</m>.
+              The Leibniz notation is
+        <m>\dfrac{dC}{dW}</m> and the units are dollars per pound.
+            </p>
+          </li>
+
+          <li>
+            <title>\#4.</title>
+            <p>
+              Since <m>P</m> is a function of <m>H</m> we write <m>P = f(H)</m>.
+              The Leibniz notation is
+        <m>\dfrac{dP}{dH}</m> and the units are dollars per hour.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 6</title>
+    <statement>
+      <p>
+        An economist is interested in how the price of a certain item
+        affects its sales.
+        At a price of <m>\dollarp</m>,
+        a quantity, <m>q</m>, of the item
+        is sold.
+        If <m>q = f(p)</m>, explain the meaning of each of the following
+        statements:
+
+        <ol>
+          <li>
+            <p>
+              <m>f(150) = 2000</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f'(150) = -25</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              In problems like these,
+              the best way to <q>explain the meaning</q> is to write a complete,
+              correct, English sentence that uses the least amount of technical jargon as possible.
+              In this case, here are some examples:
+              <q>When the price is <dollar />150,
+              there were 2000 items sold.</q>
+              <q>If we price it at <dollar />150,
+              then we'll sell 2000 items.</q>
+              <q>A price of <dollar />150 leads to sales of 2000.</q>
+              <q>We'll sell 2000 items at a price of <dollar />150.</q>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              It may help here to practice writing this in Leibniz notation:
+              <me>
+                \deriv{q}{p}\eval_{p=150}=-25
+              </me>
+              The reason this notation is useful is that it reminds us that the
+              derivative is a rate of change,
+              and which units are on top.
+              Thus,
+              we can see that the units are
+        <q>items per dollar</q> and the rate of
+              change is <m>-25</m>.
+              As before, the best thing to do is to write this
+              information down in a complete,
+              correct, English sentence:
+
+              <sidebyside>
+                <q>If the price changes to <dollar />151,
+              we can expect to sell about <m>25</m>
+                fewer items.</q>
+
+
+                <q>At the price of <dollar />150,
+              an increase of <dollar />1 will cause the number of
+                items sold to decrease by <dollar />25.</q>
+              </sidebyside>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The cost, <m>C</m>
+        (in dollars),
+        to produce <m>\ell</m> liters of a chemical
+        can be expressed as <m>C = f(\ell)</m>.
+        Using units, explain the meaning
+        of the following statements in terms of the chemical:
+
+        <ol>
+          <li>
+            <p>
+              <m>f(350)=1750</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f'(350)=9</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              This means that it costs <dollar />1750 to produce 350 liters of chemical.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              This means it will cost about <dollar />1759 to produce 351 gallons.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        For the function <m>f(x) = 2\ln(x)</m> first
+
+        <ol>
+          <li>
+            <p>
+              Use a table of numbers to approximate <m>f'(1)</m>,
+              and to write the equation of the tangent line at the point <m>(1,0)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Using linear approximation and your answer to part (a),
+              to approximate <m>f(1.01)</m>, <m>f(1.001)</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Here are some of the values we look at for the difference
+              quotient:
+              <me>
+                \begin{array}{c|c}
+                \text{ 2nd \(x\)-value }  \amp  \dfrac{2\ln(x)-2\ln(1)}{x-1}\\ \hline
+                0.5000 \amp  2.7726 \\
+                0.9000 \amp  2.1072 \\
+                0.9900 \amp  2.0101 \\
+                0.9990 \amp  2.0010 \\
+                0.9999 \amp  2.0001 \\
+                1.0001     \amp  1.9999 \\
+                1.0010     \amp  1.9990 \\
+                1.0100     \amp  1.9901 \\
+                1.1000     \amp  1.9062 \\
+                1.5000     \amp  1.6219
+                \end{array}
+              </me>
+              From this table, we estimate that <m>f'(1) = 2</m>.
+              Using this, the tangent line at
+              <md>
+                <mrow>y \amp  = m(x-x_0) + y_0</mrow>
+                <mrow>y \amp  2(x-1)</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The basic idea here is that we can use the tangent line to
+              approximate values on the original graph.
+              Thus
+              <me>
+                f(1.01) \approx y(1.01)
+              </me>
+              where <m>f(x) = 2\ln(x)</m> and <m>y(x) = 2(x-1)</m>.
+              Using this, we have
+              <md>
+                <mrow>f(1.01) \amp  \approx 2(1.01-1) = 0.02</mrow>
+                <mrow>f(1.001) \amp  \approx 2(1.001-1) = 0.002</mrow>
+              </md>
+              (As a way to double check these answers,
+              my calculator says <m>\ln(1.01)
+              = 0.009950330</m> and <m>\ln(1.001) = 0.000999500</m>.
+              Our estimates are
+              <em>very</em> close to these answers.)
+
+              To see why this sort of approximation might be useful,
+              given the
+              examples we are working with,
+              you have to use your imagination a
+              little bit.
+              You need to imagine a function that we <em>don't</em> know
+              much about.
+              For instance, the exact amount of the total national debt
+              as a function of,
+              <m>t</m>, or the amount of fuel consumption for a truck as
+              function of its cargo weight, <m>w</m>.
+              In each case, we don't know a
+              formula for the function.
+              But we might know what it's current value
+              is, and how much that value is changing.
+              Using this, we could
+              estimate what it's value would be tomorrow, or with a slight increase
+              in weight.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 46</title>
+    <statement>
+      <p>
+        The area of Brazil's rain forest,
+        <m>R = f(t)</m>, in million acres, is a
+        function of the number of years, <m>t</m>, since 2000.
+
+        <ol>
+          <li>
+            <p>
+              Interpret <m>f(9) = 740</m> and
+              <m>f'(9) = -2.7</m> in terms of Brazil's rain forests.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find and interpret the relative rate of change of <m>f(t)</m> when <m>t = 9</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>f(9) = 740</m> tells us that in 2009,
+              the area of Brazil's rain forest was 740 million acres.
+              The formula <m>f'(9) = -2.7</m> tells us that in 2009,
+              the area of the rain forest is decreasing by about 2.7 million acres per year.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <me>
+                \text{ Relative rate of change in 2009 }  = \frac{f'(9)}{f(9)} =
+                \frac{-2.7}{740} \approx -0.00365
+              </me>
+              Thus in 2009, the rain forests are shrinking at a rate of about
+              <m>0.365\%</m> per year.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problem 50(b*)</title>
+    <statement>
+      <p>
+        The world population in billions is predicted to be approximately
+        <m>P = 7.1e^{0.011t}</m> where <m>t</m> is in years since 2013.
+        Estimate the relative rate of change of population in 2018 using this model and <m>\Delta t = 0.1</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        By definition,
+        <me>
+          \text{ Relative change in 2018 }  = \frac{P'(5)}{P(5)}
+        </me>
+      </p>
+
+      <p>
+        But to use this we first need to find <m>P'(5)</m>.
+        We don't know the
+        shortcut formula for this yet, so we will estimate it.
+        Recall that
+        <me>
+          P'(5) = \lim_{\Delta t \to 0} \frac{P(5 + \Delta t) - P(5)}{\Delta t}
+        </me>
+      </p>
+
+      <p>
+        We use this with <m>\Delta t=0.1</m> to estimate <m>P'(5)</m>:
+        <me>
+          P'(5) \approx \frac{P(5.1) - P(5)}{0.1} \approx 0.08256
+        </me>
+      </p>
+
+      <p>
+        Now we can finish this problem:
+        <me>
+          \text{ Relative rate of change in 2018 }  \approx \frac{0.08256}{P(5)}
+          \approx 0.0122858
+        </me>
+      </p>
+
+      <p>
+        Another way to put this is that the relative rate of change in <m>2018</m> is approximately <m>1.2286 \%</m> per year.
+      </p>
+    </solution>
+  </example>
+</section>
+

@@ -1,0 +1,64 @@
+
+
+<section>
+  <title>Square roots</title>
+  <example>
+    <statement>
+      <p>
+        Recall that <m>(5\cdot 7)^2 = 5^2\cdot 7^2</m>.
+        Since this is true, a
+        similar result holds for square roots: <m>\sqrt{5\cdot 7} =
+        \sqrt{5}\,\cdot\,\sqrt{7}</m>.
+
+        <ol>
+          \itemsep=\fill
+
+          <li>
+            <p>
+              Simplify the following: <m>\sqrt{4\cdot 3}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Simplify the following:
+        <m>\sqrt{49x}</m> (assume that <m>x>0</m>)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Simplify the following: <m>\sqrt{7x^2}</m>
+              (assume that <m>x>0</m>)
+              \handoutfill
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>\sqrt{4\cdot 3} = \sqrt{4}\sqrt{3}=2\sqrt{3}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\sqrt{49x} = \sqrt{49}\sqrt{x} = 7\sqrt{x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>\sqrt{7x^2} = \sqrt{x^2}\sqrt{7} = x\sqrt{7}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

@@ -1,0 +1,157 @@
+
+
+<section>
+  <title>Derivatives of exponentials and logarithms</title>
+  <example>
+    <statement>
+      <p>
+        Let <m>f(x) = 3x^3+2e^x</m>
+
+        <ol>
+          <li>
+            <p>
+              Find <m>f'(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the equation of the tangent line at <m>x = 0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Compare the graph of <m>f(x)</m> and the graph of the tangent line.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Using the constant multiple rule, sum rule, and exponential
+              rules:
+              <me>
+                f'(x) = 9x^2 + 2e^x
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>y \amp  = m(x-x_0) + y_0</mrow>
+                <mrow>x_0 \amp  = 0</mrow>
+                <mrow>y_0 \amp  = f(0) = 2</mrow>
+                <mrow>m \amp  = f'(0) = 2</mrow>
+                <mrow>y \amp  = 2x+2</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We show <m>f(x)</m> and <m>y=2x+2</m> below. <image width="56%" source="images/" />
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The human population of the entire world can be modeled by
+        <m>P = 6.8(1.011)^t</m> where <m>P</m> is in billions,
+        and <m>t</m> is the year with <m>t = 0</m> corresponding to 2010 (source Wikipedia).
+      </p>
+
+      <p>
+        Find the estimated rate of growth in 2020,
+        and interpret your answer, with units.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Recall that
+        <me>
+          \text{ rate of growth }  = \text{ derivative. }
+        </me>
+      </p>
+
+      <p>
+        Also, the year 2020 means that <m>t = 10</m>.
+        Thus, we need to calculate
+        <m>P'(10)</m>, or in Leibniz notation,
+        <m>\dfrac{dP}{dt}\eval_{t=10}</m>.
+        Always find the derivative as a formula first, and then plug in the
+        number.
+        We use the Constant Multiple Rule and the General Exponential
+        Rule
+        <md>
+          <mrow>P'(t) \amp = \ddt (6.8(1.011)t)</mrow>
+          <mrow>\amp  = 6.8\BigParens{(1.011)t}'</mrow>
+          <mrow>\amp  = 6.8 \ln(1.011)(1.011)^t</mrow>
+        </md>
+        and plug in <m>t = 10</m>:
+        <me>
+          P'(10) = 6.8 \ln(1.011)(1.011)^{10} \approx 0.083 \text{ 
+          billion people/year }
+        </me>.
+      </p>
+
+      <p>
+        Here is a simple interpretation:
+      </p>
+
+      <blockquote>
+        <q>In 2020 the population will increase by 0.083
+        billion people each year.</q>
+      </blockquote>
+
+      <p>
+        Note: A simpler, and better,
+        statement would convert 0.083 billion to 83 million.
+        I didn't do that above just because I didn't want to introduce an extra calculation or step into the solution.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the marginal revenue function if <m>R(q) = 4q^2 + 7\ln(q)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Basically <q>marginal revenue</q>
+        means we should take the derivative of
+        <m>R(q)</m>.
+        Really this means we should combine the following basic rules
+        for derivatives:
+        <md>
+          <mrow>\ddx \ln(x) \amp  = \frac{1}{x}</mrow>
+          <mrow>\ddx c\cdot f(x) \amp  = c\cdot \ddx f(x)</mrow>
+        </md>
+      </p>
+
+      <p>
+        Now we apply these rules, as well as the power rule from earlier:
+        <md>
+          <mrow>MR(q) \amp  = R'(q)</mrow>
+          <mrow>\amp  = \ddq \big(4q^2+7\ln(q)\,\big)</mrow>
+          <mrow>\amp  = 4\cdot 2q^1 + 7 \ddq \ln(q)</mrow>
+          <mrow>\amp  = 8q+7\cdot \frac 1q</mrow>
+          <mrow>\amp  =  8q + \frac{7}{q}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+</section>
+

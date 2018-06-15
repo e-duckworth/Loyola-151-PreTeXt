@@ -1,0 +1,258 @@
+
+
+<section>
+  <title>The second derivative</title>
+  <example>
+    <title>Problem 2</title>
+    <statement>
+      <p>
+        At which of the labeled points, if any,
+        are both <m>\dfrac{dy}{dx}</m> and
+        <m>\dfrac{d^2y}{dx^2}</m> positive? <image width="37%" source="images/" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The only point where they are both positive is <m>B</m>.
+      </p>
+
+      <p>
+        Here's the proof.
+        Recall that <m>\deriv{y}{x}</m> is positive when the slope is positive,
+        and this means the graph is increasing.
+        The points <m>B</m> and <m>C</m> are the only points where the slope is positive,
+        and so we can cross off all the other points from our answer:
+        cross off <m>A</m>, <m>D</m>, and <m>E</m>.
+      </p>
+
+      <p>
+        Next, recall that <m>\frac{d^2y}{dx^2}</m> is positive where the graph is concave up,
+        which means it must have a shape roughly like
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[very thick,baseline=0.35cm]
+        \draw (0,0) arc (280:350:1);\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        or
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[very thick,baseline=-0.5cm]
+        \draw (0,0) arc (190:260:1);\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        So, the only points where
+        <m>\frac{d^2y}{dx^2}</m> is positive are at <m>A</m> and <m>B</m>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <title>Problems 4, 6, 8</title>
+    <statement>
+      <p>
+        Give the signs of the first and second derivatives for the following functions.
+        Each derivative is either positive everywhere,
+        zero everywhere, or negative everywhere.
+      </p>
+      <tabular>
+        {c@{ }c@{ }c}
+        <hash />4
+        <image width="30%" source="images/" />
+        &amp; <hash />6
+        <image width="30%" source="images/" />
+        &amp; <hash />8
+        <image width="30%" source="images/" />
+      </tabular>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <title>\#4</title>
+            <p>
+              Since this graph is increasing,
+              we have <m>f'(x)</m> is positive,
+              which is the same thing as <m>f'(x)>0</m>.
+              Since this graph is curving upwards,
+              we have <m>f''(x)</m> is positive. (Remember: Concave up is part of a cup.)
+            </p>
+          </li>
+
+          <li>
+            <title>\#6</title>
+            <p>
+              Since this graph is decreasing,
+              we have <m>f'(x)</m> is negative,
+              which is the same thing as <m>f'(x)\lt 0</m>.
+              Since this graph is not curving at all,
+              we have that <m>f''(x)</m> equals <m>0</m>.
+            </p>
+          </li>
+
+          <li>
+            <title>\#8</title>
+            <p>
+              Since this graph is increasing,
+              we have <m>f'(x)</m> is positive,
+              which is the same thing as <m>f'(x)>0</m>.
+              Since this graph is concave down,
+              we have that <m>f''(x)\lt 0</m>. (Remember: Concave down is part of a frown.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The temperature outside on a given day is given by <m>f(t){}^\circ C</m>,
+        where <m>t</m> is in hours since midnight.
+        From 6 AM until noon,
+        the first derivative was negative and the second was positive.
+        Which of the following is correct?
+        You may choose more than one.
+      </p>
+
+      <p>
+        This poll should be done through Poll Everywhere and then discussed
+        online.
+
+        <ol>
+          <li>
+            <p>
+              The temperature was below freezing but getting warmer.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The temperature was below freezing and getting colder.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We do not no whether the temperature was above or below freezing.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The temperature was higher at noon than at 6 AM.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The temperature was lower at noon than at 6 AM.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The temperature was rising but at a slower rate as the morning progressed.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The temperature was rising but at a faster rate as the morning progressed.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The temperature was falling and at a faster rate as the morning progressed.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The temperature was falling but at a slower rate as the morning progressed.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There is not an <q>official</q> solution to this,
+        because it is meant to be a discussion.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Let <m>P(t)</m> represent the price of a share of stock of a corporation
+        at time <m>t</m>.
+        What does each of the following statements tell us
+        about the signs of the first and second derivatives of <m>P(t)</m>?
+
+        <ol>
+          <li>
+            <p>
+              <q>The price of the stock is falling faster and faster.</q>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <q>The price of the stock is getting close to its peak,
+              at which it will remain for a little while.</q>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <q>The price of the stock is skyrocketing.</q>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              The phrase <q>price <ellipsis /> is falling</q> means <m>P'(t) \lt 0</m>.
+              Now you can draw three kinds of falling graphs:
+              <image> <latex-image><![CDATA[\begin{tikzpicture}[very thick,baseline=-0.5cm] \draw[scale=0.9] (0,0) -- (1,-1);\end{tikzpicture}]]></latex-image> </image> or \DecreaseConcaveDown or <image> <latex-image><![CDATA[\begin{tikzpicture}[very thick,baseline=-0.5cm] \draw (0,0) arc (190:260:1);\end{tikzpicture}]]></latex-image> </image> Which of these do you think makes the most sense for
+              <q>faster and faster.</q> Probably the middle one.
+              In that case,
+              it's concave down (<q>concave down is part of a frown</q>) and so <m>P''(t) \lt 0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              For the price to be getting close to its peak,
+              we need that the graph is increasing,
+              so <m>P'(t) > 0</m>, and starting to level out a little bit,
+              so curving like this \IncreaseConcaveDown That means that it's concave down,
+              so <m>P''(t)\lt 0</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The price skyrocketing means that it is increasing,
+        so <m>P'(t) > 0</m>.
+              Also,
+        it's probably not increasing more slowly as time goes on,
+              so it's <em>not</em> \IncreaseConcaveDown.
+              Rather, it probably looks like this:
+              <image> <latex-image><![CDATA[\begin{tikzpicture}[very thick,baseline=0.35cm] \draw (0,0) arc (280:350:1);\end{tikzpicture}]]></latex-image> </image> This means that it is concave up (<q>Concave up is part of a cup</q>) and so <m>P''(0)>0</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

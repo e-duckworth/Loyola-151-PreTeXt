@@ -1,0 +1,362 @@
+
+
+<section>
+  <title>Local Max and Mins</title>
+  <definition>
+    <statement>
+      <p>
+        Suppose <m>c</m> is in the domain of <m>f</m>:
+
+        <ul>
+          <li>
+            <p>
+              <m>f</m> has a
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f</m> has a
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+  </definition>
+
+  <definition>
+    <statement>
+      <p>
+        The point <m>(c,f(c))</m> is a
+
+        <ul>
+          <li>
+            <p>
+              <m>f'(c) = 0</m> or
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>f'(c)</m> is undefined.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        The <m>x</m>-value, <m>c</m>,
+        is a The <m>y</m>-value, <m>f(c)</m>, is a
+      </p>
+    </statement>
+  </definition>
+
+  <example>
+    <title>Problem 5*</title>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Sketch the graph of a function with two local maxima and one local minimum.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Sketch the graph of a function that has two critical points.
+            One should be a local maximum and one should be neither a local maximum nor local minimum.
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        There is no <q>solution</q> for this example:
+        we will discuss it as a group.
+      </p>
+    </solution>
+  </example>
+
+  <paragraphs>
+    <title>Test</title>
+    <p>
+      [First Derivative Test]
+      Suppose <m>c</m> is a critical point of a continuous function <m>f</m>.
+      When
+      moving from left to right:
+
+      <ul>
+        <li>
+          <p>
+            If <m>f'(x)</m> changes from positive to negative at <m>c</m>,
+            then <m>f</m> has a <em>local maximum</em> at <m>c</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>f'(x)</m> changes from negative to positive at <m>c</m>,
+            then <m>f</m> has a <em>local minimum</em> at <m>c</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>f'(x)</m> does not change sign from at <m>c</m>,
+            then <m>f</m> does not have a local extremum at <m>c</m>.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+  <paragraphs>
+    <title>Test</title>
+    <p>
+      [Second Derivative Test]
+      Suppose <m>c</m> is a critical number for <m>f</m> and <m>f'(c) = 0</m>.
+
+      <ul>
+        <li>
+          <p>
+            If <m>f''(c) \lt 0</m>,
+            then <m>f</m> has a <em>local minimum</em> at <m>c</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>f''(c) > 0</m>, then <m>f</m> has a
+            <em>local maximum</em> at <m>c</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            If <m>f''(c) = 0</m>, then the Second Derivative Test tells us nothing.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </paragraphs>
+  <example>
+    <statement>
+      <p>
+        Find all local extrema of the function below, using the Second
+        Derivative Test:
+        <me>
+          f(x)= \frac{2}{3}x^3 - 4x^2 - 42x
+        </me>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Recall the main steps we need for the Second Derivative Test:
+
+        <ol>
+          <li>
+            <p>
+              Find <m>f'(x)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find critical numbers (when <m>f'(x) = 0</m> or <m>f'(x)</m> DNE)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find <m>f''(x)</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Plug the critical numbers into <m>f''(x)</m> to determine whether the critical number(s) are local extrema.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        We start by finding <m>f'(x)</m> and setting it equal to <m>0</m>:
+        <md>
+          <mrow>f'(x) \amp = 2x^2 - 8x - 42</mrow>
+          <mrow>2x^2-8x-42 \amp   =0</mrow>
+          <mrow>2(x^2-4x-21) \amp  = 0</mrow>
+          <mrow>2(x-7)(x+3)\amp   =0</mrow>
+          <mrow>x \amp  = 7, -3</mrow>
+        </md>
+      </p>
+
+      <p>
+        Now we find <m>f''(x)</m> and plug in these critical numbers:
+        <md>
+          <mrow>f''(x) \amp  = 4x - 8</mrow>
+          <mrow>f''(7) \amp  = 4(7) - 8 > 0 \implies \text{ local min }</mrow>
+          <mrow>f''(-3) \amp  = 4(-3)-8 \lt  0 \implies \text{ local max }</mrow>
+        </md>
+      </p>
+
+      <p>
+        Finally, we find the critical <em>points</em>,
+        i.e.<nbsp />the <m>y</m>-values that
+        go along with each critical number.
+        We do this by plugging the
+        critical number back into <m>f</m>:
+        <md>
+          <mrow>f(-3) \amp  = \frac{2}{3}(-3)^3 - 4(-3)^2 - 42(-3) = 72</mrow>
+          <mrow>f(7) \amp  = \cdots = \frac{-784}{3} \approx -261.333</mrow>
+        </md>
+      </p>
+
+      <p>
+        Thus the function has two critical points:
+        <m>(-3, 72)</m>, which is a local maximum,
+        and <m>(7,-784/3)</m> which is a local minimum.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find and classify all the critical points of the function
+        <me>
+          f(x) = 2x^5(2x-1)^4 + 7
+        </me>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We need to find the critical numbers by first finding <m>f'(x)</m>.
+        This
+        one involves the Product Rule,
+        and the Chain Rule when we take the
+        derivative of the second part (the <m>(2x-1)^4</m>).
+        <me>
+          f'(x)  = 10x^4(2x-1)^4 + 2x^5\left(4(2x-1)^3(2)\right)
+        </me>
+      </p>
+
+      <p>
+        Now we set it equal to <m>0</m> and solve:
+        <md>
+          <mrow>f'(x) \amp  = 0</mrow>
+          <mrow>10x^4(2x-1)^4 + 16x^5(2x-1)^3\amp  = 0</mrow>
+        </md>
+      </p>
+
+      <p>
+        Note the common factors of <m>2</m>,
+        <m>x^4</m>, and <m>(2x-1)^3</m>:
+        <md>
+          <mrow>2x^4(2x-1)^3 \BigParens{5(2x-1) + 8x} \amp  = 0</mrow>
+          <mrow>2x^4(2x-1)^3 \BigParens{10x-5+8x} \amp  = 0</mrow>
+          <mrow>2x^4(2x-1)^3(18x-5)\amp  = 0</mrow>
+          <mrow>2x^4 \amp  = 0\text{ or } (2x-1)^3 =0 \text{ or } (18x-5) = 0</mrow>
+          <mrow>x \amp  = 0, 1/2, 5/18</mrow>
+        </md>
+      </p>
+
+      <p>
+        It would take a lot of work
+        (multiple Product Rules)
+        to find <m>f''(x)</m> to use the Second Derivative Test.
+        Thus the First Derivative Test might be better in this case.
+        So we want to find when <m>f'(x)</m> is negative and positive,
+        and when the derivative changes sign to find the local extrema (if any).
+      </p>
+
+      <p>
+        So we look at <m>f'(x) = 2x^4(2x-1)^3(18x-5)</m> and we see that the only time <m>f'(x)</m> changes sign is when it equals zero,
+        which are the critical numbers:
+        <m>x = 0</m>, <m>5/18</m>, and <m>1/2</m>.
+        Note that <m>5/18 \approx 0.277778</m>.
+      </p>
+
+      <p>
+        To organize my work, I draw a number line with the critical numbers marked.
+        Then I calculate <m>f'(x)</m> on each side of each critical number.
+        Note that I don't calculate the actual value,
+        just whether the derivative is positive or negative.
+        This makes things <em>much</em> faster.
+        For example, we are looking at
+        <m>f'(x) = 2x^4(2x-1)^3(18x-5)</m> and wondering whether <m>f'(x)</m> is positive or negative to the left of <m>0</m> (for <m>x \lt 0</m>).
+        So I choose one value, say <m>x = -1</m>,
+        and plug it into <m>f'(x)</m>.
+        Since it is factored, I look at whether each factor is positive or negative,
+        keeping in mind whether the powers are odd or even.
+        So for <m>f'(-1)</m> I get:
+        <m>2(+)(-)(-) = (+)</m>, and mark this on the number line.
+        We could have chosen a different value to plug in,
+        like <m>x=-2</m>, or <m>x=-1/2</m>,
+        or <m>x=-10</m> and the net result would have been the same.
+        We need to pick three more values in the other parts of the number line.
+        Here are an easy three to use:
+        <m>x=4/18</m>, <m>x=6/18</m>,
+        and <m>x=1</m> (I used something over <m>18</m> to make the factor <m>(18x-5)</m> easy to figure out).
+        Here's the finished result
+      </p>
+      <image>
+        <latex-image><![CDATA[\begin{tikzpicture}[scale = 1.25]
+        \draw[<->] (-4,0) -- (4,0);
+        \foreach \x/&#322;in {-2/0, 0/{5/18}, 2/{1/2}}
+        \draw (\x,0.4) -- (\x,-0.6) node[below]{ \(&#322;\)};
+
+        \draw (0,0.5) node[above] { \(f'(x) = 2x^4(2x-1)^3(18x-5)\)};
+        \draw (-4,0) node[above] { \(2(+)(-)(-) = (+)\)};
+        \draw (-4,0) node[below] { \(f'(x) > 0\)};
+        \draw(-4,-1) node { \(f \nearrow\)};
+
+        \draw (-1,0) node[above] { \(2(+)(-)(-)\)};
+        \draw (-1,0) node[below] { \(f'(x) > 0\)};
+        \draw(-1,-1) node { \(f \nearrow\)};
+
+        \draw (1,0) node[above] { \(2(+)(-)(+)\)};
+        \draw (1,0) node[below] { \(f'(x) &lt; 0\)};
+        \draw(1,-1) node { \(f \searrow\)};
+
+        \draw (3,0) node[above] { \(2(+)(+)(+)\)};
+        \draw (3,0) node[below] { \(f'(x) > 0\)};
+        \draw(3,-1) node { \(f \nearrow\)};\end{tikzpicture}]]></latex-image>
+      </image>
+      <p>
+        From the above information and the First Derivative Test,
+        we see that
+        there is a local maximum at
+        <m>x = 5/18</m>, and a local minimum at
+        <m>x = 1/2</m>,
+        and the critical point at <m>x = 0</m> is not a local extremum.
+        But they asked for critical \text{ points } , so we have to figure out
+        the <m>y</m>-values of these points.
+        Go all the way back to the original
+        function <m>f(x)=2x^5(2x-1)^4</m>
+        (not <m>f'</m>!)
+        and plug in the critical
+        numbers:
+        <md>
+          <mrow>f(x) \amp = 2x^5(2x-1)^4 + 7</mrow>
+          <mrow>f(0) \amp = 7</mrow>
+          <mrow>f(5/18) \amp  = 2\left(\tfrac{5}{18}\right)^5 \BigParens{2\left(\tfrac{5}{18}\right) - 1}^4 + 7</mrow>
+          <mrow>\amp  = 2\frac{5^5}{18^5}\left(-\frac{4}{9}\right)^4 + 7</mrow>
+          <mrow>\amp  = \frac{3125(256)}{944784(6561)} + 7</mrow>
+          <mrow>\amp  \approx 7.000129</mrow>
+          <mrow>f(1/2) \amp  = 2\left(\tfrac{1}{2}\right)^5\BigParens{2(\tfrac{1}{2}) - 1}^4 + 7</mrow>
+          <mrow>\amp  = \frac{1}{16}(0) + 7 =  7</mrow>
+        </md>
+      </p>
+
+      <p>
+        Finally, we can summarize our answer
+        <md>
+          <mrow>(0, 7): \amp  \text{ not a local extremum }</mrow>
+          <mrow>(5/18, 7.000129):\amp  \text{ local maximum }</mrow>
+          <mrow>(1/2, 7):\amp  \; \text{ local minimum }</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+</section>
+

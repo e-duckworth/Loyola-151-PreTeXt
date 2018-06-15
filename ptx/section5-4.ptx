@@ -1,0 +1,419 @@
+
+
+<section>
+  <title>Optimizing Cost and Revenue</title>
+  <paragraphs>
+    <title>Class Discussion</title>
+    <p>
+      Suppose you're looking at a demand curve.
+      What does the point on the curve where <m>p=0</m> mean?
+      What does the point where <m>q=0</m> mean?
+    </p>
+  </paragraphs>
+  <example>
+    <statement>
+      <p>
+        Let <m>C(q)</m> be the total cost of producing a quantity <m>q</m> of a
+        certain product.
+        See Figure below (Figure 4.52 in the text).
+
+        <ol>
+          <li>
+            <p>
+              What is the meaning of <m>C(0)</m>?
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Describe in words how the marginal cost changes as the quantity produced increases.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Explain the concavity of the graph (in terms of economics).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Explain the economic significance
+              (in terms of marginal cost)
+              of the point at which the concavity changes.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Do you expect the graph of <m>C(q)</m> to look like this for all types of products?
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        <image width="56%" source="images/" />
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>C(0)</m> is the amount of the fixed costs before production.
+              This would include costs of initial investments such as the building(s),
+              equipment,
+              etc. needed to begin production.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The marginal cost decreases slowly,
+              and then increases as quantity produced (<m>q</m>) increases.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Concave down implies decreasing marginal cost,
+              while concave up implies increasing marginal cost.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Since the concavity of the graph is determined by <m>C''(q) = MC'(q)</m>,
+              when the graph is concave up,
+              that means <m>C''(q) = MC'(q)</m> is positive.
+              Thus marginal cost (<m>MC</m>) is increasing when cost is concave up,
+              and likewise marginal cost is decreasing when cost is concave down.
+              From this we get an inflection point on the graph of cost will be when marginal cost changes from increasing to decreasing,
+              or from decreasing to increasing.
+              Thus an inflection point of the cost function is a point where marginal cost has a local or global extremum.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Because of volume pricing of supplies,
+              etc., there are production levels in which the additional cost to produce more items
+              (marginal cost)
+              would decrease.
+              But at some point,
+              one would have to pay workers overtime, hire more workers,
+              rent more storage space,
+        add more delivery trucks, etc.
+              Thus at some point the additional cost to produce more
+              (marginal cost)
+              will go up.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        A demand function is <m>p = 400-2q</m>,
+        where <m>q</m> is the quantity of the
+        good sold for price <m>\dollarp</m>.
+
+        <ol>
+          <li>
+            <p>
+              Find an expression for the total revenue <m>R</m>,
+        in terms of <m>q</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find the marginal revenue,
+        <m>MR</m>, in terms of <m>q</m>.
+              Calculate the marginal revenue when <m>q=10</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Compare with the change in total revenue when production changes from <m>q=10</m> to <m>q=11</m> using the revenue function to the approximation in change in revenue using <m>MR</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Before we start, make sure you understand the basic formula
+        <m>p=400-2q</m>.
+        This means that we can plug in something like <m>q=100</m>
+        and get the price, <m>p(100)</m>.
+        Sometimes we do demand problems the
+        other way around, so always stop and double check.
+
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>R(q) \amp  = (\text{ price } )(\#\text{ sold } )</mrow>
+                <mrow>\amp  = [p(q)][q]</mrow>
+                <mrow>\amp  = (400-2q)(q)</mrow>
+                <mrow>\amp  = 400q-2q^2</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>MR \amp  = R'(q)</mrow>
+                <mrow>\amp  = 400 - 4q</mrow>
+                <mrow>MR(10) \amp  = 400+4(10)</mrow>
+                <mrow>\amp  = 360</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <md>
+                <mrow>\Delta R \amp  = R(11) - R(10)</mrow>
+                <mrow>\amp  = 400(11)-2(11^2) - \BigParens{400(10)-2(10^2)}</mrow>
+                <mrow>\amp  = 4158 - 3800</mrow>
+                <mrow>\amp  = 358</mrow>
+              </md>
+              The point of part (c) is that 358 is really close to 360, but it's
+              actually much easier to calculate the 360.
+              So, rather than calculate
+              marginal revenue by plugging in two values of <m>q</m> that are next to
+              each other, and subtracting,
+              we should use the derivative.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The demand equation for a product is <m>p = 295 - 0.2q</m>.
+        Write the revenue as a function of <m>q</m> and find the quantity that maximizes revenue.
+        What price corresponds to this quantity?
+        What is the total revenue at this price?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We start by finding <m>R(q)</m>.
+        <md>
+          <mrow>R(q) \amp  = (\text{ price } )(\#\text{ sold } )</mrow>
+          <mrow>\amp  = [p(q)][q]</mrow>
+          <mrow>\amp  = (295 -0.2q)(q)</mrow>
+          <mrow>\amp  = 259q-0.2q^2</mrow>
+        </md>
+      </p>
+
+      <p>
+        Now, as always,
+        we take the derivative and set it equal to <m>0</m>
+        <md>
+          <mrow>R'(q) \amp  = 295 - 0.4 q</mrow>
+          <mrow>295 - 0.4 q \amp  = 0</mrow>
+          <mrow>q \amp  = \frac{295}{0.4}</mrow>
+          <mrow>\amp  =  737.5</mrow>
+        </md>
+      </p>
+
+      <p>
+        This is a critical number.
+        To verify that it's a maximum,
+        note that the original function
+        <m>R(q) = 295q-0.2q^2</m> is a parabola that opens downwards.
+        Thus, the only critical point that it has is a maximum. (You can also pretty easily double check that the second derivative is negative,
+        so again, it's a maximum.)
+      </p>
+
+      <p>
+        To find the price that corresponds to this quantity we use the
+        original function for <m>p</m>:
+        <md>
+          <mrow>p \amp  = 295 - 0.2 q</mrow>
+          <mrow>p(737.5) \amp  = 295 - 0.2(737.5)</mrow>
+          <mrow>\amp  = \dollar 147.5</mrow>
+        </md>
+      </p>
+
+      <p>
+        Finally, we'll get the revenue that we expect at this quantity.
+        We
+        can calculate it in the simplest possible way: we've got <m>737.5</m>
+        things, and each of them sells at a price of <m>\dollar147.5</m>,
+        for a total of
+        <me>
+          737.5\times \dollar147.5 = \dollar108,781.25
+        </me>
+      </p>
+
+      <p>
+        We could also plug <m>737.5</m> directly into the formula for <m>R(q)</m>:
+        <me>
+          R(737.5) = 295(737.5) - 0.2 (737.5)^2 = 108,781.25
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            Production of an item has fixed costs of
+            <m>\dollar9,500</m> and variable costs of <m>\dollar175</m> per item.
+            Express the cost, <m>C</m>, of producing <m>q</m> items.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The relationship between price,
+            <m>p</m>, and quantity, <m>q</m>, demanded is linear.
+            Market research shows that <m>10,500</m> items are sold when the price is
+            <m>\dollar280</m> and <m>13,000</m> items are sold when the price is <m>\dollar250</m>.
+            Express <m>p</m> as a function of price <m>q</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Find the profit function <m>P(q)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            How many items should the company produce to maximize profit? (Give your answer to the nearest integer.) What is the profit at that production level?
+            What is the price charged at that production level?
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <m>C(q) = 9500+175q</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Be very carefully!
+              Some problems, many, use <m>q</m> as a function
+              of <m>p</m>.
+              But we are doing it the other way this time, we want <m>p</m>=
+              stuff involving <m>q</m>.
+
+              We solve this problem the same we solve every similar linear
+              problem: use 2 points on the line:
+              <m>(10500,280)</m> and <m>(13000,250)</m>
+              so we can calculate <m>m</m>,
+              and plug into the point-slope formula:
+              <md>
+                <mrow>p-p_0 \amp  = m(q-q_0)</mrow>
+                <mrow>\text{ or } p \amp  = m(q-q_0)+p_0</mrow>
+              </md>
+              We can let <m>q_0=10500</m>,
+              and <m>p_0=280</m>, and so all we have to do is
+              calculate <m>m</m>:
+              <md>
+                <mrow>m \amp  = \frac{280-250}{10500-13000} = \frac{30}{-2500} = -\frac{3}{250}</mrow>
+                <mrow>p \amp  = -\frac{3}{250}(q-10500) +280</mrow>
+                <mrow>\amp  = -\frac{3}{250}q + 126 + 280</mrow>
+                <mrow>\amp  = -\frac{3}{250}q + 406</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              As always,
+        <m>R(q) = \text{ price } \times \text{ quantity }</m>:
+              <md>
+                <mrow>R(q) \amp  = p\times q</mrow>
+                <mrow>R(q) \amp  = \left(-\frac{3}{250}q + 406\right)q</mrow>
+                <mrow>R(q) \amp  = -\frac{3}{250}q^2 + 406 q</mrow>
+                <mrow>P(q) \amp  = R(q) - C(q)</mrow>
+                <mrow>\amp  = -\frac{3}{250}q^2 + 406q - (9500+175q)</mrow>
+                <mrow>\amp  = -\frac{3}{250}q^2+231q - 9500</mrow>
+              </md>
+              Finding the maximum of profit can be done in two different ways:
+              Finding the critical point of <m>P</m> or by setting <m>MR = MC</m>.
+              Let's try
+              <m>MR=MC</m> (recall that MC, the marginal cost,
+        was given in the very
+              first line of the problem):
+              <md>
+                <mrow>MR                    \amp  = MC</mrow>
+                <mrow>-\frac{6}{250}q + 406 \amp  = 175</mrow>
+                <mrow>-\frac{6}{250}q + 406 \amp  = 175</mrow>
+                <mrow>\frac{6}{250}q        \amp  = 231</mrow>
+                <mrow>q                     \amp  = 231(250/6)</mrow>
+                <mrow>\amp  = 9625</mrow>
+              </md>
+              Since <m>P</m> is a parabola opening downwards,
+              we know this critical point
+              is the vertex and a maximum.
+              To find the actual profit, we should
+              plug <m>q=9625</m> into <m>P</m> to get <m>P(9625) = 1102187.5</m> and to find the
+              actual price we should use our formula in part <m>b</m> to get
+              <m>p(9625) = \dollar290.5</m>.
+              Now we can summarize everything we've found
+              <md>
+                <mrow>\text{ Maximum profit: }  \amp  \ \dollar1,102,187.5</mrow>
+                <mrow>\text{ price: }  \amp \  \dollar290.5</mrow>
+                <mrow>\text{ quantity: }  \amp \  9625</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Suppose you are making something, say T-shirts,
+        and you want to model how much revenue you'll bring in.
+        You know the demand curve of your T-shirts,
+        i.e. how many T-shirts you'll sell at a given price.
+        You can write the demand curve in two ways, <m>q=Q(p)</m>,
+        i.e. quantity sold depends on the price you set, or <m>p=P(q)</m>,
+        i.e. the price you set should depend on how many you want to sell.
+      </p>
+
+      <p>
+        Which do you think makes more sense:
+        use <m>q=Q(p)</m> and write <m>R</m> as a function <m>p</m>,
+        so <m>R(p)= p\times Q(p)</m>,
+        or use <m>p=P(q)</m> and write <m>R</m> as a function of <m>q</m>,
+        so <m>R(q) = P(q)\times q</m>?
+      </p>
+    </statement>
+    <solution>
+      <p>
+        There is no <q>solution</q> here:
+        it's an(other) opportunity to discuss something!
+      </p>
+    </solution>
+  </example>
+</section>
+

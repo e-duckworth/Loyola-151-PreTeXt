@@ -1,0 +1,224 @@
+
+
+<section>
+  <title>Shortcuts for powers of <m>x</m>,
+  constants, sums, and differences</title>
+  <example>
+    <statement>
+      <p>
+        Let <m>f(x)=3x^2-5x+8</m>.
+        Find <m>f'(x)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        With practice, you can probably just write this down in one step:
+        <me>
+          f'(x) = 6x -5
+        </me>
+      </p>
+
+      <p>
+        But when you are still learning these steps, it might help to break it
+        down more:
+        <md>
+          <mrow>f'(x) \amp  = \ddx (3x^2-5x+8) \amp \amp \text{ ``\(f'(x)\)'' means ``take the derivative'' }</mrow>
+          <mrow>\amp   = \ddx (3x^2) - \ddx(5x) + \ddx(8) \amp \amp  \text{ apply the derivative across \(+\) and \(-\) signs }</mrow>
+          <mrow>\amp   = 3\cdot 2x^1 - 5\cdot x^0 + 0  \amp \amp  \text{ ``constant multiple'', ``constant rule'' and ``power rule'' }</mrow>
+          <mrow>\amp   = 6 x  - 5  \amp \amp  \text{ just cleaning up }</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            For <m>f(x)=6\sqrt{x}</m> find <m>f'(x)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            For <m>C(q) = q^{13}-\frac{5}{q^3}+7</m>, find the marginal cost.
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              Before taking the derivative of <m>\sqrt{x}</m> we should rewrite it
+              in exponential form, i.e. as a power of <m>x</m>:
+              <me>
+                6\sqrt{x}=6x^{1/2}
+              </me>
+              It's very important that you become comfortable with fractional
+              exponents: fractional exponents mean you have a root.  
+
+              Now we can take the derivative:
+              <md>
+                <mrow>f' (x) \amp  = \ddx 6\sqrt{x}</mrow>
+                <mrow>\amp  = \ddx 6x^{1/2}</mrow>
+                <mrow>\amp  = 6\cdot \frac 12 x^{\tfrac 12 -1}</mrow>
+                <mrow>\amp  = 3x^{-1/2} \text{ or }  \frac{3}{\sqrt{x}}</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Before taking the derivative of <m>\frac{5}{q^3}</m> we should 
+              rewrite it in an exponential form,
+              i.e.<nbsp />as a constant times a
+              power of <m>q</m>:
+              <me>
+                \frac{5}{q^3} = 5q^{-3}
+              </me>
+              It's very important that you become comfortable with negative
+              exponents: negative exponents mean you have
+              <q>one over <ellipsis /></q>.
+
+              Now we can take the derivative:
+              <md>
+                <mrow>C'(q) \amp  = \ddq (q^{13}-\frac{5}{q^3}+7)</mrow>
+                <mrow>\amp  = \ddq (q^{13} -5q^{-3}+7)</mrow>
+                <mrow>\amp  = 13q^{13-1} -5(-3)q^{-3-1}+0</mrow>
+                <mrow>\amp  = 13q^{12} +15 q^{-4} \text{ or }  13q^{12}+\frac{15}{q^4}</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <ol>
+        <li>
+          <p>
+            For <m>y=2.5q^2-0.75q+9.23</m>, find <m>y''</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            For <m>C(q) = q(q^2+q^{-2})</m>, find <m>C''(q)</m>.
+          </p>
+        </li>
+      </ol>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              <md>
+                <mrow>y ' \amp  = \ddq (2.5q^2-0.75q+9.23)</mrow>
+                <mrow>\amp  = 2.5(2)q^{2-1}-0.75(1)q^{0}+0\amp \amp  \text{ clean up before taking next derivative }</mrow>
+                <mrow>\amp  = 5q-0.75</mrow>
+                <mrow>y'' \amp  = \ddq (5q-0.75)</mrow>
+                <mrow>\amp  = 5</mrow>
+              </md>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In this case we should <q>clean up</q> <em>before</em>
+              you take even the first derivative:
+              <me>
+                C(q) = q(q^2+q^{-2}) = q^3+q^{-1}
+              </me>
+              Now we take derivatives:
+              <md>
+                <mrow>C'(q) \amp  = \ddq (q^3+q^{-1})</mrow>
+                <mrow>\amp  = 3q^2 + (-1) q^{-1-1}</mrow>
+                <mrow>\amp  = 3q^2 - q^{-2}</mrow>
+                <mrow>C''(q) \amp  = 3(2)q^{1}-(-2)q^{-2-1}</mrow>
+                <mrow>\amp  = 6q+2q^{-3}</mrow>
+              </md>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Let <m>f(x) =3x^2-4x+1</m>.
+
+        <ol>
+          <li>
+            <p>
+              Find the equation of the tangent line to <m>f</m> at <m>(1,0)</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Find when <m>f</m> has a horizontal tangent line.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              We will fill in the following equation
+              <md>
+                <mrow>y \amp  = m(x-x_0) + y_0</mrow>
+                <mrow>x_0 \amp  = 1</mrow>
+                <mrow>y_0 \amp  = 0</mrow>
+                <mrow>m \amp  = f'(x_0) = f'(1)</mrow>
+              </md>
+              We start by taking the derivative,
+              and then plug this into the equations above:
+              <md>
+                <mrow>f' (x) \amp  = \ddx (3x^2-4x+1)</mrow>
+                <mrow>\amp  = 6x-4</mrow>
+                <mrow>m \amp  = f'(1)</mrow>
+                <mrow>\amp  = 6(1)-4 = 2</mrow>
+                <mrow>y \amp  = 2(x-1)+0</mrow>
+                <mrow>\amp  = 2x-2</mrow>
+              </md>
+              Just to double check, you can look at the graphs to see we got it right:
+              <image width="56%" source="images/" />
+            </p>
+          </li>
+
+          <li>
+            <p>
+              First we <q>rewrite</q>
+              the question, at least in our heads:
+              <md>
+                <mrow>f \text{ has a horizontal tangent line }  \amp  = \text{ means the slope is \(0\) }</mrow>
+                <mrow>\amp  = \text{ means } f'(x)=0</mrow>
+              </md>
+              Now we set this up as an equation and solve it:
+              <md>
+                <mrow>f'(x) \amp  = 0</mrow>
+                <mrow>6x-4 \amp  = 0</mrow>
+                <mrow>6x \amp  = 4</mrow>
+                <mrow>x \amp  = 4/6 = 2/3</mrow>
+              </md>
+              Just to double check, you can look at the graphs to see we got it right:
+              <image width="56%" source="images/" />
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+</section>
+

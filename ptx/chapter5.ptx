@@ -1,0 +1,12 @@
+
+
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" >
+  <title>Using the Derivative</title>
+  <xi:include  href="section5-1.ptx" />
+  <xi:include  href="section5-2.ptx" />
+  <xi:include  href="section5-3.ptx" />
+  <xi:include  href="section5-4.ptx" />
+  <xi:include  href="section5-5.ptx" />
+  <xi:include  href="section5-6.ptx" />
+</chapter>
+

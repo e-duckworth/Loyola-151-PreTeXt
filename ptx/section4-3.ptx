@@ -1,0 +1,241 @@
+
+
+<section>
+  <title>The Chain Rule</title>
+  <example>
+    <statement>
+      <p>
+        Suppose we are given <m>A(t) = 1000 e^{0.149t}</m>.
+        Find <m>A'(1)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The main idea here is to apply the chain rule to <m>e^{0.149t}</m>.
+        If
+        it was just <m>e^t</m> we would use the basic rule, <m>\ddt e^t = e^t</m>,
+        i.e.<nbsp />do nothing.
+        Since we have <m>0.149t</m> <q>inside</q> of the
+        exponent, we should use the chain rule.
+        We start with the basic
+        rule (do nothing in this case),
+        we don't change the inside, and then
+        we multiply by the derivative of the inside.
+        I'll write this in two
+        ways: (1) using an extra variable,
+        <m>z</m>, like the book does, to label
+        the inside function, (2) using colors and words to keep track of
+        what's inside and what's outside.
+        <em>You</em> don't need to write it
+        both ways, choose what works best for you.
+        <md>
+          <mrow>\begin{aligned}\ddt e^z \amp  = \deriv{y}{z}\cdot \deriv{z}{t} \text{ where } y=e^z,\text{ and } z=0.149t\\
+          \amp  = e^z\cdot (0.149)\\
+          \amp  = e^{0.149t}(0.149)
+          \end{aligned}</mrow>
+          <mrow>\text{ or }  
+          $\chain[(0.5ex,0.5ex)]{\ddt
+          e^{0.149t}_{}}{e^{(\inside{0.149t})}_{}}{(0.149)}$</mrow>
+        </md>
+      </p>
+
+      <p>
+        Now we combine this with the rest of the formula for <m>A(t)</m> and
+        evaluate at <m>t=1</m>
+        <md>
+          <mrow>A'(t) \amp  = 1000 e^{0.149t}(0.149)</mrow>
+          <mrow>\amp  = 149e^{0.149t}</mrow>
+          <mrow>A'(1) \amp  = 149e^{0.149}</mrow>
+          <mrow>\amp  \approx 172.94</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the derivatives of
+
+        <ol>
+          <li>
+            <p>
+              <m>R = (q^3-5q+7)^5</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>h(x) = \frac{17}{\sqrt{3+5x^2}}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        For Chain Rule problems,
+        we want to think of what is the
+        <q>outside function</q>
+        and what is the <q>inside function</q>,
+        and we need each of these to be simple enough that we know how to find its derivatives.
+        Sometimes it is best to think of the
+        <q>outside function</q>
+        as the last calculation you do.
+      </p>
+
+      <p>
+        For (a), we see that the last calculation that would be done would
+        be to take the fifth-power what is in the parentheses.
+        Thus we'd
+        have <m>z = q^3 -5q+7</m> and <m>R = z^5</m>.
+        The Chain Rule gives us
+        <md>
+          <mrow>\begin{aligned}\deriv{R}{q} \amp  = \deriv{R}{z} \cdot \deriv{z}{q}, \text{ where } R  = z^5, z= q^3-5q+7\\
+          \amp  = 5z^4\cdot (3q^2-5)\\
+          \amp  = 5(q^3-5q+7)^4(3q^2-5)
+          \end{aligned}</mrow>
+          <mrow>\text{ or }   \chain{\ddq (q^3-5q+7)^5}
+          {5(\inside{q^3-5q+7})^4} {(3q^2-5)}</mrow>
+        </md>
+      </p>
+
+      <p>
+        For (b), we need to rewrite the function, changing the
+        radical in the denominator to a negative exponent:
+        <m>h(x) = 17(3+5x^2)^{-1/2}</m>.
+        Then we use the Power and Chain Rule
+        Combined:
+        <me>
+          \chain{\ddx 17(3+5x^2)^{-1/2}} {17\left(-\tfrac{1}{2}\right)(\inside{3+5x^2})^{-3/2}} {(10x)}
+        </me>
+      </p>
+
+      <p>
+        We can clean this up, but please be clear in your head:
+        we are done
+        with the derivative at this point.
+        The rest is algebra which
+        <em>might</em> be useful, but you also might sometimes not want to do
+        it, and in any case it's not the new part here.
+        <md>
+          <mrow>17\left(-\frac{1}{2}\right)(3+5x^2)^{-3/2} (10x)
+          \amp  = -\frac{17(10)}{2} (3+5x^2)^{-3/2}x</mrow>
+          <mrow>\amp  = \frac{85x}{(3+5x^2)^{3/2}}</mrow>
+        </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the derivatives of
+
+        <ol>
+          <li>
+            <p>
+              <m>y = 5e^{6x} +e^{-x}</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>y = e^{3x^2-7x+11}</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        With exponential functions it's a little tricky to spot what
+        <q>inside function</q> means.
+        Basically, we should just learn with
+        experience that for these, <q>inside</q> means what's on top.
+        You can
+        make this a little easier to see if you realize that the exponents
+        are basically inside implied parentheses:
+        <me>
+          e^x = e^{(x)},
+          e^{6x} = e^{(6x)},
+          e^{-x} = e^{(-x)},
+          e^{3x^2-7x+11} = e^{(3x^2-7x+11)},\ \text{ etc. }
+        </me>
+      </p>
+
+      <p>
+        Now <q>inside</q> really means inside,
+        it's inside the parentheses.
+        If
+        you combine this with the Chain Rule you get the following pattern
+        <md>
+          <mrow>y \amp  = e^z,\ z=\text{ stuff } 
+          \deriv{y}{x} \amp  = \deriv{y}{z}\cdot \deriv{z}{x}</mrow>
+          <mrow>y \amp  = e^{\text{ (stuff) } } \implies y' = e^{\text{ (stuff) } } (\text{ stuff } )'</mrow>
+        </md>
+      </p>
+
+      <p>
+        We'll use this in both parts below.
+      </p>
+
+      <p>
+        For (a), we use the Chain Rule on each of the terms, using the pattern
+        above.
+        Thus we get
+        <md>
+          <mrow>y' \amp  =(5e^{6x}+e^{-x})'</mrow>
+          <mrow>\amp  = 5e^{(6x)}(6x)' + e^{(-x)}(-x)'</mrow>
+          <mrow>\amp  = 5e^{6x}(6)+e^{-x}(-1)</mrow>
+          <mrow>\amp  = 30e^{6x} - e^{-x}</mrow>
+        </md>
+      </p>
+
+      <p>
+        For (b), we use the pattern for Exponential Functions and Chain Rule Combined:
+        <md>
+          <mrow>y' \amp  = e^{\text{ (stuff) } } (\text{ stuff } )'</mrow>
+          <mrow>y' \amp  =  e^{(3x^2-7x+11)}(3x^2-7x+11)'</mrow>
+          <mrow>\amp  =  e^{(3x^2-7x+11)}(6x-7)</mrow>
+          <mrow>\amp  = (6x-7)e^{3x^2-7x+11}</mrow>
+        </md>
+      </p>
+
+      <p>
+        Note: it's important that you include the parentheses around <m>6x-7</m>: Without them it's not right,
+        and you will lose points.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the derivative of <m>f(x) = \ln(x^2+5)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Here we have: outside = <m>\ln()</m> and inside = <m>x^2+5</m>.
+        <md>
+          <mrow>\begin{aligned}\deriv{f}{x} \amp  = \deriv{f}{z} \cdot \deriv{z}{x} \text{ where } z=x^2+5\\
+          \amp  = \frac{1}{z}\cdot (2x)\\
+          \amp  = \frac{2x}{x^2+5}
+          \end{aligned}</mrow>
+          <mrow>\text{ or } \lnchain{\ddx \ln(x^2+5)}
+          {\frac{1}{\inside{x^2+5}}} {(2x)}</mrow>
+        </md>
+      </p>
+
+      <p>
+        This gives us the pattern for natural logarithms with the Chain Rule:
+        <me>
+          y = \ln(\text{ stuff } ) \implies y' = \frac{1}{(\text{ stuff } )}
+          (\text{ stuff } )' = \frac{(\text{ stuff } )'}{\text{ stuff } }
+        </me>
+      </p>
+    </solution>
+  </example>
+</section>
+
